@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/brosssh/morphe-patches/compare/v1.9.2...v2.0.0) (2026-03-15)
+
+
+* feat!: Move to Morphe ([214d7d5](https://github.com/brosssh/morphe-patches/commit/214d7d542f25378ce1d1695ebe59b181008c20ae))
+
+
+### BREAKING CHANGES
+
+* Moved to Morphe APIs
+
 # [2.0.0-dev.1](https://github.com/brosssh/revanced-patches/compare/v1.9.2...v2.0.0-dev.1) (2026-03-15)
 
 

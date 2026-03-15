@@ -13,25 +13,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
 
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
-          distribution: "temurin"
-          java-version: "17"
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Cache Gradle
-        uses: burrunan/gradle-cache-action@v2
+        uses: burrunan/gradle-cache-action@v3
 
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew :patches:buildAndroid --no-daemon
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: revanced-patches
-          path: patches/build/libs

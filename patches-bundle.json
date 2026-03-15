@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-03-15T21:19:43",
+  "description": "# [2.0.0-dev.1](https://github.com/brosssh/revanced-patches/compare/v1.9.2...v2.0.0-dev.1) (2026-03-15)\n\n\n* feat!: Move to Morphe ([214d7d5](https://github.com/brosssh/revanced-patches/commit/214d7d542f25378ce1d1695ebe59b181008c20ae))\n\n\n### BREAKING CHANGES\n\n* Moved to Morphe APIs",
+  "download_url": "https://github.com/brosssh/revanced-patches/releases/download/v2.0.0-dev.1/patches-2.0.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/brosssh/revanced-patches/releases/download/v2.0.0-dev.1/patches-2.0.0-dev.1.mpp.asc",
+  "version": "2.0.0-dev.1"
+}

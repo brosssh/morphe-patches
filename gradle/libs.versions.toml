@@ -3,6 +3,13 @@ morphe-patcher = "1.2.0"
 #noinspection GradleDependency
 smali = "b6365a84f4"
 gson = "2.13.2"
+annotation = "1.9.1"
+okhttp = "5.0.0-alpha.14"
 
 [libraries]
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+
+[plugins]
+android-library = { id = "com.android.library" }

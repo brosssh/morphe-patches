@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0-dev.1",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -8,6 +8,101 @@
       "dependencies": [],
       "compatiblePackages": {
         "cz.seznam.mapy": null
+      },
+      "options": []
+    },
+    {
+      "name": "Hide explore feed",
+      "description": "Hides posts and reels from the explore/search page.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide navigation buttons",
+      "description": "Hides navigation bar buttons, such as the Reels and Create button.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": [
+        {
+          "key": "hideHome",
+          "title": "Hide Home",
+          "description": "Permanently hides the Home button. App starts at next available tab.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideReels",
+          "title": "Hide Reels",
+          "description": "Permanently hides the Reels button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideDirect",
+          "title": "Hide Direct",
+          "description": "Permanently hides the Direct button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideSearch",
+          "title": "Hide Search",
+          "description": "Permanently hides the Search button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideProfile",
+          "title": "Hide Profile",
+          "description": "Permanently hides the Profile button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideCreate",
+          "title": "Hide Create",
+          "description": "Permanently hides the Create button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Limit feed to followed profiles",
+      "description": "Filters the home feed to display only content from profiles you follow.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
       },
       "options": []
     },

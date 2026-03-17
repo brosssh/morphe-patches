@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0-dev.1",
+  "version": "2.1.0-dev.2",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -8,6 +8,42 @@
       "dependencies": [],
       "compatiblePackages": {
         "cz.seznam.mapy": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable Reels scrolling",
+      "description": "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable story auto flipping",
+      "description": "Disable stories automatically flipping/skipping after some seconds.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable developer menu",
+      "description": "Enables the developer menu, which can be found at the bottom of settings menu with name 'Internal Settings'.\n\nIt is recommended to use this patch with an alpha/beta Instagram release. Patching a stable release works, but the developer menu shows the developer flags as numbers and does not show a human readable description.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
       },
       "options": []
     },
@@ -95,6 +131,20 @@
     {
       "name": "Limit feed to followed profiles",
       "description": "Filters the home feed to display only content from profiles you follow.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Sanitize sharing URLs",
+      "description": "Sanitize sharing URLs by removing tracking IDs",
       "use": false,
       "dependencies": [
         "BytecodePatch"

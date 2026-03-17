@@ -1,3 +1,10 @@
+# [2.1.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.1...v2.1.0-dev.2) (2026-03-17)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([08ef7b4](https://github.com/brosssh/morphe-patches/commit/08ef7b4344f52fb468a94da547bd8bbf9982bd37))
+
 # [2.1.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.0.0...v2.1.0-dev.1) (2026-03-17)
 
 

@@ -1,10 +1,9 @@
-package app.revanced.patches.instagram.hide.navigation
+package app.morphe.patches.instagram.hide.navigation
 
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.booleanOption
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.hide.navigation.initializeNavigationButtonsListFingerprint
-import app.morphe.patches.instagram.hide.navigation.navigationButtonsEnumInitFingerprint
+import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
 import app.morphe.patches.instagram.misc.extension.sharedExtensionPatch
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.findFreeRegister
@@ -25,7 +24,7 @@ val hideNavigationButtonsPatch = bytecodePatch(
     description = "Hides navigation bar buttons, such as the Reels and Create button.",
     use = false
 ) {
-    compatibleWith("com.instagram.android"("422.0.0.0.35"))
+    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
 
     dependsOn(sharedExtensionPatch)
 

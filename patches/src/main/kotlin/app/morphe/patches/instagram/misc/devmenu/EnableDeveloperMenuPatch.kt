@@ -1,6 +1,7 @@
 package app.morphe.patches.instagram.misc.devmenu
 
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
 import app.morphe.util.Utils.trimIndentMultiline
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstructionReversedOrThrow
@@ -18,7 +19,7 @@ val enableDeveloperMenuPatch = bytecodePatch(
     """.trimIndentMultiline(),
     use = false
 ) {
-    compatibleWith("com.instagram.android"("422.0.0.0.35"))
+    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
 
     execute {
         with(clearNotificationReceiverFingerprint.method) {

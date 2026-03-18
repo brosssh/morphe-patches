@@ -2,6 +2,7 @@ package app.morphe.patches.instagram.reels
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
 import app.morphe.util.returnEarly
 
 @Suppress("unused")
@@ -11,7 +12,7 @@ val disableReelsScrollingPatch = bytecodePatch(
             "Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
     use = false
 ) {
-    compatibleWith("com.instagram.android"("422.0.0.0.35"))
+    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
 
     execute {
         val viewPagerField = clipsViewPagerImplGetViewAtIndexFingerprint.classDef.fields.first {

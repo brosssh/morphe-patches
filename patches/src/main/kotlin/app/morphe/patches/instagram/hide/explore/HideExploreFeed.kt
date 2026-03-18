@@ -5,6 +5,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 context(BytecodePatchContext)
@@ -31,7 +32,7 @@ val hideExploreFeedPatch = bytecodePatch(
     description = "Hides posts and reels from the explore/search page.",
     use = false,
 ) {
-    compatibleWith("com.instagram.android"("422.0.0.0.35"))
+    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
 
     execute {
         exploreResponseJsonParserFingerprint.replaceJsonFieldWithBogus(EXPLORE_KEY_TO_BE_HIDDEN)

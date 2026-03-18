@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-17T17:13:16",
-  "description": "# [2.1.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.1...v2.1.0-dev.2) (2026-03-17)\n\n\n### Features\n\n* More Instagram patches ported from ReVanced ([08ef7b4](https://github.com/brosssh/morphe-patches/commit/08ef7b4344f52fb468a94da547bd8bbf9982bd37))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.2/patches-2.1.0-dev.2.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.2/patches-2.1.0-dev.2.mpp.asc",
-  "version": "2.1.0-dev.2"
+  "created_at": "2026-03-18T08:35:01",
+  "description": "# [2.1.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.2...v2.1.0-dev.3) (2026-03-18)\n\n\n### Features\n\n* More Instagram patches ported from ReVanced ([790149f](https://github.com/brosssh/morphe-patches/commit/790149f2b280bf968c490a285e117bf3bef3989c))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.3/patches-2.1.0-dev.3.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.3/patches-2.1.0-dev.3.mpp.asc",
+  "version": "2.1.0-dev.3"
 }

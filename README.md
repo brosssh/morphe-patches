@@ -8,6 +8,7 @@ This repository contains patches I made for some apps I care about.
 
 | App            | Package                            | Patches                                     |
 |----------------|------------------------------------|---------------------------------------------|
+| Instagram      | `com.instagram.android`            | Multiple patches!                           |
 | Calistree      | `com.calistree.calistree`          | <ul><li>Unlock Pro features</li></ul>       |
 | Chargeprice    | `fr.chargeprice.app`               | <ul><li>Unlock Premium features</li></ul>   |
 | Geocaching     | `com.groundspeak.geocaching.intro` | <ul><li>Unlock Premium features</li></ul>   |

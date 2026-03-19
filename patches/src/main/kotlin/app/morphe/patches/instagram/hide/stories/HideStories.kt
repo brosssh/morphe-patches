@@ -13,10 +13,9 @@ val hideStoriesPatch = bytecodePatch(
     compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
 
     execute {
-        val addStoryMethod = getOrCreateAvatarViewFingerprint.method // Creates Story
-        val addStoryEndIndex = getOrCreateAvatarViewFingerprint.instructionMatches.lastIndex
+        val addStoryEndIndex = getOrCreateAvatarViewFingerprint.instructionMatches.last().index
 
         // Remove addView of Story.
-        addStoryMethod.removeInstruction(addStoryEndIndex)
+        getOrCreateAvatarViewFingerprint.method.removeInstruction(addStoryEndIndex)
     }
 }

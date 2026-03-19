@@ -16,3 +16,10 @@ This repository contains patches I made for some apps I care about.
 | Komoot         | `de.komoot.android`                | <ul><li>Unlock Premium features</li></ul>   |
 | Mapy           | `cz.seznam.mapy`                   | <ul><li>Unlock Premium features</li></ul>   |
 | Park4night     | `fr.tramb.park4night`              | <ul><li>Unlock Pro features</li></ul>       |
+
+
+## How to use
+Simply click on this link to install my patches in the Morphe manager:
+https://morphe.software/add-source?github=brosssh/morphe-patches. 
+
+Alternatively, add `https://github.com/brosssh/morphe-patches` as remote URL.

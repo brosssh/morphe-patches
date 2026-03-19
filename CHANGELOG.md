@@ -1,3 +1,10 @@
+# [2.1.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.3...v2.1.0-dev.4) (2026-03-19)
+
+
+### Bug Fixes
+
+* Correct matched instruction ([76d355e](https://github.com/brosssh/morphe-patches/commit/76d355e14d50971796fb9d327bb855ad9668aafd))
+
 # [2.1.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.2...v2.1.0-dev.3) (2026-03-18)
 
 

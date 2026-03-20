@@ -8,5 +8,5 @@ internal val clipsViewPagerImplGetViewAtIndexFingerprint = Fingerprint(
 
 internal val clipsSwipeRefreshLayoutOnInterceptTouchEventFingerprint  = Fingerprint (
     parameters = listOf("Landroid/view/MotionEvent;"),
-    custom = { _, classDef -> classDef.type == "Linstagram/features/clips/viewer/ui/ClipsSwipeRefreshLayout;" }
+    definingClass = "Linstagram/features/clips/viewer/ui/ClipsSwipeRefreshLayout;"
 )

@@ -11,15 +11,15 @@ internal val permalinkResponseJsonParserFingerprint = Fingerprint (
         Opcode.INVOKE_DIRECT,
         Opcode.INVOKE_VIRTUAL
     ),
-    custom = { method, _ -> method.name == "unsafeParseFromJson" }
+    name = "unsafeParseFromJson"
 )
 
 internal val storyUrlResponseJsonParserFingerprint = Fingerprint (
     strings = listOf("story_item_to_share_url"),
-    custom = { method, _ -> method.name == "unsafeParseFromJson" }
+    name = "unsafeParseFromJson"
 )
 
 internal val profileUrlResponseJsonParserFingerprint = Fingerprint (
     strings = listOf("profile_to_share_url"),
-    custom = { method, _ -> method.name == "unsafeParseFromJson" }
+    name = "unsafeParseFromJson"
 )

@@ -16,8 +16,6 @@ private val navigationButtonsEnumClassDef = Fingerprint(
 
 context(BytecodePatchContext)
 internal val navigationButtonsEnumInitFingerprint get() = Fingerprint (
-    custom = { method, classDef ->
-        method.name == "<init>"
-                && classDef == navigationButtonsEnumClassDef.classDef
-    }
+    name = "<init>",
+    definingClass = navigationButtonsEnumClassDef.classDef.type
 )

@@ -9,10 +9,8 @@ internal val mainFeedRequestClassFingerprint = Fingerprint (
 
 context(BytecodePatchContext)
 internal val initMainFeedRequestFingerprint get() = Fingerprint(
-    custom = { method, classDef ->
-        method.name == "<init>" &&
-                classDef == mainFeedRequestClassFingerprint.classDef
-    }
+    name =  "<init>",
+    definingClass = mainFeedRequestClassFingerprint.classDef.type
 )
 
 internal val mainFeedHeaderMapFinderFingerprint = Fingerprint (

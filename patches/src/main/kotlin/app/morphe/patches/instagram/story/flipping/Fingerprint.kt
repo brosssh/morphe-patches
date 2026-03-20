@@ -6,7 +6,5 @@ internal val onStoryTimeoutActionFingerprint = Fingerprint(
     parameters = listOf("Ljava/lang/Object;"),
     returnType = "V",
     strings = listOf("userSession"),
-    custom = { _, classDef ->
-        classDef.type == "Linstagram/features/stories/fragment/ReelViewerFragment;"
-    }
+    definingClass = "Linstagram/features/stories/fragment/ReelViewerFragment;"
 )

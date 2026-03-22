@@ -1,3 +1,10 @@
+# [2.1.0-dev.6](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.5...v2.1.0-dev.6) (2026-03-22)
+
+
+### Bug Fixes
+
+* Rollback ([c7e7a14](https://github.com/brosssh/morphe-patches/commit/c7e7a149007a6bba7d1e213c6a2ab2ccfcb59d80))
+
 # [2.1.0-dev.5](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.4...v2.1.0-dev.5) (2026-03-22)
 
 

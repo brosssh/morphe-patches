@@ -1,3 +1,10 @@
+# [2.1.0-dev.7](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.6...v2.1.0-dev.7) (2026-03-22)
+
+
+### Bug Fixes
+
+* Bump patcher ([b7b359a](https://github.com/brosssh/morphe-patches/commit/b7b359ab7a0adba1de7eba5cb12926c2c284232f))
+
 # [2.1.0-dev.6](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.5...v2.1.0-dev.6) (2026-03-22)
 
 

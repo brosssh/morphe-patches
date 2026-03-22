@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-19T22:00:23",
-  "description": "# [2.1.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.3...v2.1.0-dev.4) (2026-03-19)\n\n\n### Bug Fixes\n\n* Correct matched instruction ([76d355e](https://github.com/brosssh/morphe-patches/commit/76d355e14d50971796fb9d327bb855ad9668aafd))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.4/patches-2.1.0-dev.4.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.4/patches-2.1.0-dev.4.mpp.asc",
-  "version": "2.1.0-dev.4"
+  "created_at": "2026-03-22T14:25:36",
+  "description": "# [2.1.0-dev.5](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.4...v2.1.0-dev.5) (2026-03-22)\n\n\n### Features\n\n* More Instagram patches ported from ReVanced ([7adfaa4](https://github.com/brosssh/morphe-patches/commit/7adfaa416d7b4acaf3dea4301d51a6ed8d658b38))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.5/patches-2.1.0-dev.5.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.1.0-dev.5/patches-2.1.0-dev.5.mpp.asc",
+  "version": "2.1.0-dev.5"
 }

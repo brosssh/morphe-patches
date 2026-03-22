@@ -1,7 +1,7 @@
 package app.morphe.patches.instagram.misc.devmenu
 
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.util.Utils.trimIndentMultiline
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstructionReversedOrThrow
@@ -17,9 +17,9 @@ val enableDeveloperMenuPatch = bytecodePatch(
         
         It is recommended to use this patch with an alpha/beta Instagram release. Patching a stable release works, but the developer menu shows the developer flags as numbers and does not show a human readable description.
     """.trimIndentMultiline(),
-    use = false
+    default = false
 ) {
-    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
         with(clearNotificationReceiverFingerprint.method) {

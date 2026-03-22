@@ -21,7 +21,7 @@ fun sharedExtensionPatch(
     extensionName: String,
     isYouTubeOrYouTubeMusic: Boolean,
     vararg hooks: ExtensionHook,
-) = bytecodePatch {
+) = bytecodePatch(null, null, default = true) {
     dependsOn(sharedExtensionPatch(isYouTubeOrYouTubeMusic, *hooks))
 
     extendWith("extensions/$extensionName.mpe")
@@ -36,7 +36,7 @@ fun sharedExtensionPatch(
 fun sharedExtensionPatch(
     isYouTubeOrYouTubeMusic: Boolean,
     vararg hooks: ExtensionHook,
-) = bytecodePatch {
+) = bytecodePatch(null, null, default = true) {
     val extensionName = if (isYouTubeOrYouTubeMusic) "shared-youtube" else "shared"
     extendWith("extensions/$extensionName.mpe")
 

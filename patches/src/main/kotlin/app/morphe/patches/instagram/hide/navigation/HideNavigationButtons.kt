@@ -3,7 +3,7 @@ package app.morphe.patches.instagram.hide.navigation
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.booleanOption
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.patches.instagram.misc.extension.sharedExtensionPatch
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.findFreeRegister
@@ -22,9 +22,9 @@ private const val EXTENSION_CLASS_DESCRIPTOR =
 val hideNavigationButtonsPatch = bytecodePatch(
     name = "Hide navigation buttons",
     description = "Hides navigation bar buttons, such as the Reels and Create button.",
-    use = false
+    default = false
 ) {
-    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     dependsOn(sharedExtensionPatch)
 

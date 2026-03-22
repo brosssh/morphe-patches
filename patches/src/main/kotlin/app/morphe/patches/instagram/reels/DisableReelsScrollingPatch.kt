@@ -2,7 +2,7 @@ package app.morphe.patches.instagram.reels
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.util.returnEarly
 
 @Suppress("unused")
@@ -10,9 +10,9 @@ val disableReelsScrollingPatch = bytecodePatch(
     name = "Disable Reels scrolling",
     description = "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. " +
             "Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
-    use = false
+    default = false
 ) {
-    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
         val viewPagerField = clipsViewPagerImplGetViewAtIndexFingerprint.classDef.fields.first {

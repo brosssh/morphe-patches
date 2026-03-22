@@ -1,6 +1,14 @@
 package app.morphe.patches.instagram
 
-import app.morphe.patcher.patch.Package
+import app.morphe.patcher.patch.ApkFileType
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 
-internal val SUPPORTED_INSTAGRAM_VERSION: Package =
-    "com.instagram.android" to setOf("422.0.0.0.35")
+internal object Constants {
+    val COMPATIBILITY_INSTAGRAM = Compatibility(
+        name = "Instagram",
+        packageName = "com.instagram.android",
+        apkFileType = ApkFileType.APK,
+        targets = listOf(AppTarget(version = "422.0.0.0.35"))
+    )
+}

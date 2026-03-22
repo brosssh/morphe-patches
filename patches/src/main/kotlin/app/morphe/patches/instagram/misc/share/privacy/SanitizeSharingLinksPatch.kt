@@ -2,7 +2,7 @@ package app.morphe.patches.instagram.misc.share.privacy
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.patches.instagram.misc.extension.sharedExtensionPatch
 import app.morphe.patches.instagram.misc.share.editShareLinksPatch
 
@@ -13,9 +13,9 @@ private const val EXTENSION_CLASS_DESCRIPTOR =
 val sanitizeSharingLinksPatch = bytecodePatch(
     name = "Sanitize sharing URLs",
     description = "Sanitize sharing URLs by removing tracking IDs",
-    use = false
+    default = false
 ) {
-    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     dependsOn(sharedExtensionPatch)
 

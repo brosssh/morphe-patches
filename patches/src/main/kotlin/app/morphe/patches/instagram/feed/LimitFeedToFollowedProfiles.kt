@@ -3,7 +3,7 @@ package app.morphe.patches.instagram.feed
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.SUPPORTED_INSTAGRAM_VERSION
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.patches.instagram.misc.extension.sharedExtensionPatch
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstructionOrThrow
@@ -16,9 +16,9 @@ internal const val EXTENSION_CLASS_DESCRIPTOR = "Lapp/morphe/extension/instagram
 val limitFeedToFollowedProfiles = bytecodePatch(
     name = "Limit feed to followed profiles",
     description = "Filters the home feed to display only content from profiles you follow.",
-    use = false
+    default = false
 ) {
-    compatibleWith(SUPPORTED_INSTAGRAM_VERSION)
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     dependsOn(sharedExtensionPatch)
 

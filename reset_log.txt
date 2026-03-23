@@ -1,3 +1,0 @@
-# Resetting dev branch to specific commit
-
-This commit resets the dev branch to commit 48b29fddedaa8cfb0192407cf69263ef1374791e.

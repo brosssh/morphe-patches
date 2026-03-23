@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0-dev.7",
+  "version": "2.1.0-dev.8",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -209,6 +209,18 @@
       "dependencies": [
         "BytecodePatch"
       ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Remove build expired popup",
+      "description": "Removes the popup that appears after a while, when the app version ages.",
+      "use": false,
+      "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
           "422.0.0.0.35"

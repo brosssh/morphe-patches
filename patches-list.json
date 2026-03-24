@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0-dev.8",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -8,6 +8,237 @@
       "dependencies": [],
       "compatiblePackages": {
         "cz.seznam.mapy": null
+      },
+      "options": []
+    },
+    {
+      "name": "Change link sharing domain",
+      "description": "Replaces the domain name of Instagram links when sharing them.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": [
+        {
+          "key": "domainName",
+          "title": "Domain name",
+          "description": "The domain name to use when sharing links.",
+          "required": false,
+          "type": "kotlin.String",
+          "default": "imginn.com",
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Disable Reels scrolling",
+      "description": "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable analytics",
+      "description": "Disables analytics that are sent periodically.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable story auto flipping",
+      "description": "Disable stories automatically flipping/skipping after some seconds.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable developer menu",
+      "description": "Enables the developer menu, which can be found at the bottom of settings menu with name 'Internal Settings'.\n\nIt is recommended to use this patch with an alpha/beta Instagram release. Patching a stable release works, but the developer menu shows the developer flags as numbers and does not show a human readable description.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide Stories from Home",
+      "description": "Hides Stories from the main page, by removing the buttons.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": null,
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide explore feed",
+      "description": "Hides posts and reels from the explore/search page.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide navigation buttons",
+      "description": "Hides navigation bar buttons, such as the Reels and Create button.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": [
+        {
+          "key": "hideHome",
+          "title": "Hide Home",
+          "description": "Permanently hides the Home button. App starts at next available tab.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideReels",
+          "title": "Hide Reels",
+          "description": "Permanently hides the Reels button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideDirect",
+          "title": "Hide Direct",
+          "description": "Permanently hides the Direct button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideSearch",
+          "title": "Hide Search",
+          "description": "Permanently hides the Search button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideProfile",
+          "title": "Hide Profile",
+          "description": "Permanently hides the Profile button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "hideCreate",
+          "title": "Hide Create",
+          "description": "Permanently hides the Create button.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Limit feed to followed profiles",
+      "description": "Filters the home feed to display only content from profiles you follow.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Open links externally",
+      "description": "Changes links to always open in your external browser, instead of the in-app browser.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Remove build expired popup",
+      "description": "Removes the popup that appears after a while, when the app version ages.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Sanitize sharing URLs",
+      "description": "Sanitize sharing URLs by removing tracking IDs",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
       },
       "options": []
     },

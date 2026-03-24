@@ -1,8 +1,8 @@
 package app.morphe.patches.hevy.subscription
 
 import app.morphe.patcher.patch.rawResourcePatch
-import app.morphe.patches.shared.misc.hex.hexPatch
 import app.morphe.patches.shared.misc.hex.Replacement
+import app.morphe.patches.shared.misc.hex.hexPatch
 
 @Suppress("unused")
 val unlockSubscriptionPatch = rawResourcePatch(
@@ -13,7 +13,7 @@ val unlockSubscriptionPatch = rawResourcePatch(
     compatibleWith("com.hevy"("2.0.0"))
 
     dependsOn (
-        hexPatch{
+        hexPatch {
             setOf(
                 Replacement(
                     "f8 ff 77 01 7a",

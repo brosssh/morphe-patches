@@ -1,0 +1,41 @@
+package app.morphe.patches.instagram.misc.share.domain
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.stringOption
+import app.morphe.patches.instagram.Constants.COMPATIBILITY_INSTAGRAM
+import app.morphe.patches.instagram.misc.extension.sharedExtensionPatch
+import app.morphe.patches.instagram.misc.share.editShareLinksPatch
+import app.morphe.util.returnEarly
+
+@Suppress("unused")
+val changeLinkSharingDomainPatch = bytecodePatch(
+    name = "Change link sharing domain",
+    description = "Replaces the domain name of Instagram links when sharing them.",
+    default = false
+) {
+    compatibleWith(COMPATIBILITY_INSTAGRAM)
+
+    dependsOn(sharedExtensionPatch)
+
+    val customDomainHost by stringOption(
+        key = "domainName",
+        default = "imginn.com",
+        title = "Domain name",
+        description = "The domain name to use when sharing links."
+    )
+
+    execute {
+        getCustomShareDomainFingerprint.method.returnEarly(customDomainHost!!)
+
+        editShareLinksPatch { index, register ->
+            addInstructions(
+                index,
+                """
+                    invoke-static { v$register }, $EXTENSION_CLASS_DESCRIPTOR->setCustomShareDomain(Ljava/lang/String;)Ljava/lang/String;
+                    move-result-object v$register
+                """
+            )
+        }
+    }
+}

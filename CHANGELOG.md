@@ -1,3 +1,59 @@
+# [2.1.0-dev.8](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.7...v2.1.0-dev.8) (2026-03-23)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([ae480c0](https://github.com/brosssh/morphe-patches/commit/ae480c05a2a3879f6557955e4bc8ad8b59e598f1))
+
+# [2.1.0-dev.7](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.6...v2.1.0-dev.7) (2026-03-22)
+
+
+### Bug Fixes
+
+* Bump patcher ([b7b359a](https://github.com/brosssh/morphe-patches/commit/b7b359ab7a0adba1de7eba5cb12926c2c284232f))
+
+# [2.1.0-dev.6](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.5...v2.1.0-dev.6) (2026-03-22)
+
+
+### Bug Fixes
+
+* Rollback ([c7e7a14](https://github.com/brosssh/morphe-patches/commit/c7e7a149007a6bba7d1e213c6a2ab2ccfcb59d80))
+
+# [2.1.0-dev.5](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.4...v2.1.0-dev.5) (2026-03-22)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([7adfaa4](https://github.com/brosssh/morphe-patches/commit/7adfaa416d7b4acaf3dea4301d51a6ed8d658b38))
+
+# [2.1.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.3...v2.1.0-dev.4) (2026-03-19)
+
+
+### Bug Fixes
+
+* Correct matched instruction ([76d355e](https://github.com/brosssh/morphe-patches/commit/76d355e14d50971796fb9d327bb855ad9668aafd))
+
+# [2.1.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.2...v2.1.0-dev.3) (2026-03-18)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([790149f](https://github.com/brosssh/morphe-patches/commit/790149f2b280bf968c490a285e117bf3bef3989c))
+
+# [2.1.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.1...v2.1.0-dev.2) (2026-03-17)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([08ef7b4](https://github.com/brosssh/morphe-patches/commit/08ef7b4344f52fb468a94da547bd8bbf9982bd37))
+
+# [2.1.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.0.0...v2.1.0-dev.1) (2026-03-17)
+
+
+### Features
+
+* Some Instagram patches ported from ReVanced ([a121b18](https://github.com/brosssh/morphe-patches/commit/a121b189bbc6f94d9909601e729fa667c6b5578d))
+
 # [2.0.0](https://github.com/brosssh/morphe-patches/compare/v1.9.2...v2.0.0) (2026-03-15)
 
 

@@ -1,3 +1,21 @@
+# [2.1.0](https://github.com/brosssh/morphe-patches/compare/v2.0.0...v2.1.0) (2026-03-24)
+
+
+### Bug Fixes
+
+* Bump patcher ([b7b359a](https://github.com/brosssh/morphe-patches/commit/b7b359ab7a0adba1de7eba5cb12926c2c284232f))
+* Correct matched instruction ([76d355e](https://github.com/brosssh/morphe-patches/commit/76d355e14d50971796fb9d327bb855ad9668aafd))
+* Rollback ([c7e7a14](https://github.com/brosssh/morphe-patches/commit/c7e7a149007a6bba7d1e213c6a2ab2ccfcb59d80))
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([ae480c0](https://github.com/brosssh/morphe-patches/commit/ae480c05a2a3879f6557955e4bc8ad8b59e598f1))
+* More Instagram patches ported from ReVanced ([7adfaa4](https://github.com/brosssh/morphe-patches/commit/7adfaa416d7b4acaf3dea4301d51a6ed8d658b38))
+* More Instagram patches ported from ReVanced ([790149f](https://github.com/brosssh/morphe-patches/commit/790149f2b280bf968c490a285e117bf3bef3989c))
+* More Instagram patches ported from ReVanced ([08ef7b4](https://github.com/brosssh/morphe-patches/commit/08ef7b4344f52fb468a94da547bd8bbf9982bd37))
+* Some Instagram patches ported from ReVanced ([a121b18](https://github.com/brosssh/morphe-patches/commit/a121b189bbc6f94d9909601e729fa667c6b5578d))
+
 # [2.1.0-dev.8](https://github.com/brosssh/morphe-patches/compare/v2.1.0-dev.7...v2.1.0-dev.8) (2026-03-23)
 
 

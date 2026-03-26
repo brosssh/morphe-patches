@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0-dev.2",
+  "version": "2.2.0-dev.3",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -98,7 +98,7 @@
     {
       "name": "Hide ads",
       "description": null,
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
@@ -191,7 +191,7 @@
     {
       "name": "Hide suggested content",
       "description": "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
@@ -231,7 +231,7 @@
     {
       "name": "Remove build expired popup",
       "description": "Removes the popup that appears after a while, when the app version ages.",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [

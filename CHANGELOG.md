@@ -1,3 +1,10 @@
+# [2.2.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.2...v2.2.0-dev.3) (2026-03-26)
+
+
+### Features
+
+* **Instagram:** Make Fingerprints objects + default patches ([dd9c91c](https://github.com/brosssh/morphe-patches/commit/dd9c91c05812d106c27e16ff569ec59320a12dfe))
+
 # [2.2.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.1...v2.2.0-dev.2) (2026-03-26)
 
 

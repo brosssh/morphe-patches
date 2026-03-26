@@ -14,7 +14,7 @@ val hideSuggestedContent = bytecodePatch(
 
     execute {
         FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-            feedItemParseFromJsonFingerprint.replaceJsonFieldWithBogus(key)
+            feedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
         }
     }
 }

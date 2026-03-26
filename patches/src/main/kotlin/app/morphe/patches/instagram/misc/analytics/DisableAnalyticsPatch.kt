@@ -24,6 +24,6 @@ val disableAnalyticsPatch = bytecodePatch(
         )
 
         // Replaces analytics url as BOGUS.
-        facebookAnalyticsUrlInitMethodFingerprint.replaceJsonFieldWithBogus(TARGET_URL)
+        facebookAnalyticsUrlInitMethodFingerprint.method.replaceJsonFieldWithBogus(TARGET_URL)
     }
 }

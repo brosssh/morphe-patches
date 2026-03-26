@@ -1,3 +1,10 @@
+# [2.2.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.1...v2.2.0-dev.2) (2026-03-26)
+
+
+### Features
+
+* Remove more ads ([4710465](https://github.com/brosssh/morphe-patches/commit/47104652af24d30bcf678a58ac2d46d9d5486788))
+
 # [2.2.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.1.0...v2.2.0-dev.1) (2026-03-26)
 
 

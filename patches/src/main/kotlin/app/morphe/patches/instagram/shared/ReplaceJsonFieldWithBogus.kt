@@ -2,14 +2,12 @@ package app.morphe.patches.instagram.shared
 
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.morphe.util.indexOfFirstStringInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
-context(BytecodePatchContext)
 internal fun MutableMethod.replaceJsonFieldWithBogus(
-    key: String,
+    key: String
 ) {
     val targetStringIndex = indexOfFirstStringInstructionOrThrow(key)
     val targetStringRegister = getInstruction<OneRegisterInstruction>(targetStringIndex).registerA

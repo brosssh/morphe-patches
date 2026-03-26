@@ -13,6 +13,6 @@ val hideExploreFeedPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
-        exploreResponseJsonParserFingerprint.method.replaceJsonFieldWithBogus(EXPLORE_KEY_TO_BE_HIDDEN)
+        ExploreResponseJsonParserFingerprint.method.replaceJsonFieldWithBogus(EXPLORE_KEY_TO_BE_HIDDEN)
     }
 }

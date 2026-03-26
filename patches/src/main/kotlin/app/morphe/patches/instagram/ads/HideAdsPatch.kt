@@ -8,7 +8,7 @@ import app.morphe.util.returnEarly
 @Suppress("unused")
 val hideAdsPatch = bytecodePatch(
     name = "Hide ads",
-    default = false
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

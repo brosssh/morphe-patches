@@ -8,13 +8,13 @@ import app.morphe.patches.instagram.shared.replaceJsonFieldWithBogus
 val hideSuggestedContent = bytecodePatch(
     name = "Hide suggested content",
     description = "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
-    default = false,
+    default = true,
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
         FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-            feedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
+            FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
         }
     }
 }

@@ -26,7 +26,7 @@ val changeLinkSharingDomainPatch = bytecodePatch(
     )
 
     execute {
-        getCustomShareDomainFingerprint.method.returnEarly(customDomainHost!!)
+        GetCustomShareDomainFingerprint.method.returnEarly(customDomainHost!!)
 
         editShareLinksPatch { index, register ->
             addInstructions(

@@ -30,11 +30,11 @@ val limitFeedToFollowedProfiles = bytecodePatch(
          */
         val mainFeedRequestHeaderFieldName: String
 
-        with(mainFeedHeaderMapFinderFingerprint.method) {
+        with(MainFeedHeaderMapFinderFingerprint.method) {
             mainFeedRequestHeaderFieldName = indexOfFirstInstructionOrThrow {
                 getReference<FieldReference>().let { ref ->
                     ref?.type == "Ljava/util/Map;" &&
-                            ref.definingClass == mainFeedRequestClassFingerprint.classDef.toString()
+                            ref.definingClass == MainFeedRequestClassFingerprint.classDef.toString()
 
                 }
             }.let { instructionIndex ->
@@ -42,7 +42,7 @@ val limitFeedToFollowedProfiles = bytecodePatch(
             }
         }
 
-        initMainFeedRequestFingerprint.method.apply {
+        InitMainFeedRequestFingerprint.method.apply {
             // Finds the instruction where the map is being initialized in the constructor
             val getHeaderIndex = indexOfFirstInstructionOrThrow {
                 getReference<FieldReference>().let {

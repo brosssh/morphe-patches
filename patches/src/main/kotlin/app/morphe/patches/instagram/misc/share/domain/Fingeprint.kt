@@ -6,7 +6,7 @@ import com.android.tools.smali.dexlib2.AccessFlags
 internal const val EXTENSION_CLASS_DESCRIPTOR =
     "Lapp/morphe/extension/instagram/misc/share/domain/ChangeLinkSharingDomainPatch;"
 
-internal val getCustomShareDomainFingerprint = Fingerprint(
+internal object GetCustomShareDomainFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PRIVATE, AccessFlags.STATIC),
     returnType = ("Ljava/lang/String;"),
     parameters = listOf(),

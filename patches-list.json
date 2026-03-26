@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0-dev.1",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -187,6 +187,18 @@
           "values": null
         }
       ]
+    },
+    {
+      "name": "Hide suggested content",
+      "description": "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
     },
     {
       "name": "Limit feed to followed profiles",

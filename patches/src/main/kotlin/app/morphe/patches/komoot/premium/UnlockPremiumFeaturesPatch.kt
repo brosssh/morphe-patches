@@ -1,5 +1,6 @@
 package app.morphe.patches.komoot.premium
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -15,7 +16,7 @@ val unlockProPatch = bytecodePatch(
     description = "Unlock Premium features. Some features are not possible to patch (server sided), " +
             "such as saving a multi-days hike."
 ) {
-    compatibleWith("de.komoot.android"("2025.38.2"))
+    compatibleWith(Constants.COMPATIBILITY_KOMOOT)
 
     execute {
         premiumConfigFingerprint.method.apply {

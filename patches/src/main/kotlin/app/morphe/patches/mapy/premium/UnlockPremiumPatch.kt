@@ -1,5 +1,6 @@
 package app.morphe.patches.mapy.premium
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
@@ -12,7 +13,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 val unlockPremiumPatch = bytecodePatch(
     name = "Unlock premium features",
 ) {
-    compatibleWith("cz.seznam.mapy"("9.70.1"))
+    compatibleWith(Constants.COMPATIBILITY_MAPY_9_70_1)
 
     execute {
         userInfoFromJsonFingerprint.method.apply {

@@ -1,5 +1,6 @@
 package app.morphe.patches.calistree.pro
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import com.android.tools.smali.dexlib2.Opcode
@@ -15,7 +16,7 @@ val unlockProPatch = bytecodePatch(
             "to subscribe will be shown. In this screen, just swipe down to refresh " +
             "and the app will have Pro features again."
 ) {
-    compatibleWith("com.calistree.calistree"("4.17.8"))
+    compatibleWith(Constants.COMPATIBILITY_CALISTREE)
 
     execute {
         proFingerprint.method.apply {

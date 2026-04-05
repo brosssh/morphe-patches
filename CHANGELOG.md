@@ -1,3 +1,10 @@
+# [2.2.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.3...v2.2.0-dev.4) (2026-04-05)
+
+
+### Features
+
+* **Mapy:** Update support to latest version ([374798f](https://github.com/brosssh/morphe-patches/commit/374798fa1ceceedf7c85dcd69213ac6d67b6c45c))
+
 # [2.2.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.2...v2.2.0-dev.3) (2026-03-26)
 
 

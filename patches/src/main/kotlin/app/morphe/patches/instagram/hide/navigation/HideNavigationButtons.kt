@@ -80,7 +80,7 @@ val hideNavigationButtonsPatch = bytecodePatch(
         val enumNameField: String
 
         // Get the field name which contains the name of the enum for the navigation button ("fragment_clips", "fragment_share", ...)
-        with(navigationButtonsEnumInitFingerprint.method) {
+        with(NavigationButtonsEnumInitFingerprint.method) {
             enumNameField = indexOfFirstInstructionOrThrow {
                 opcode == Opcode.IPUT_OBJECT &&
                         (this as TwoRegisterInstruction).registerA == 2 // The p2 register
@@ -89,7 +89,7 @@ val hideNavigationButtonsPatch = bytecodePatch(
             }
         }
 
-        initializeNavigationButtonsListFingerprint.method.apply {
+        InitializeNavigationButtonsListFingerprint.method.apply {
             val returnIndex = indexOfFirstInstructionOrThrow(Opcode.RETURN_OBJECT)
             val buttonsListRegister = getInstruction<OneRegisterInstruction>(returnIndex).registerA
             val freeRegister = findFreeRegister(returnIndex)

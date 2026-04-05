@@ -4,7 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.OpcodesFilter
 import com.android.tools.smali.dexlib2.Opcode
 
-internal val getOrCreateAvatarViewFingerprint = Fingerprint(
+internal object GetOrCreateAvatarViewFingerprint : Fingerprint(
     parameters = emptyList(),
     returnType = "L",
     definingClass = "Lcom/instagram/reels/ui/views/reelavatar/RecyclerReelAvatarView;",

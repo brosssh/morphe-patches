@@ -12,12 +12,12 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 val removeBuildExpiredPopupPatch = bytecodePatch(
     name = "Remove build expired popup",
     description = "Removes the popup that appears after a while, when the app version ages.",
-    default = false
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
-        appUpdateLockoutBuilderFingerprint.method.apply {
+        AppUpdateLockoutBuilderFingerprint.method.apply {
             val longToIntIndex = instructions.first { it.opcode == Opcode.LONG_TO_INT }.location.index
             val appAgeRegister = getInstruction<TwoRegisterInstruction>(longToIntIndex).registerA
 

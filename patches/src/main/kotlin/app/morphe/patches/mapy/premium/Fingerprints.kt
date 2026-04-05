@@ -1,15 +1,17 @@
 package app.morphe.patches.mapy.premium
 
-import app.morphe.patcher.fingerprint
+import app.morphe.patcher.Fingerprint
+import com.android.tools.smali.dexlib2.AccessFlags
 
-internal val userInfoFromJsonFingerprint = fingerprint {
-    custom { method, classDef ->
-        method.name == "fromJson" && classDef.endsWith("/UserInfo\$Companion;")}
-    strings("premium")
-}
+internal object UserInfoFromJsonFingerprint : Fingerprint (
+    name = "fromJson",
+    definingClass = "/UserInfo\$Companion;",
+    strings = listOf("premium")
+)
 
-internal val featuresSyntheticInitFingerprint = fingerprint {
-    custom { method, classDef ->
-        method.name == "<init>" && classDef.endsWith("/FeaturesApiModel;")}
-    parameters("I", "Z", "Z", "Z", "I", "Z", "Z", "Z", "Z", "L")
-}
+internal object FeaturesSyntheticInitFingerprint : Fingerprint (
+    name = "<init>",
+    definingClass = "/FeaturesApiModel;",
+    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.SYNTHETIC, AccessFlags.CONSTRUCTOR),
+    parameters = listOf("I", "Z", "Z", "Z", "I", "Z", "Z", "Z", "Z", "Ljava/lang/Integer;", "L")
+)

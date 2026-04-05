@@ -1,5 +1,6 @@
 package app.morphe.patches.chargeprice.subscription
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 
@@ -8,7 +9,7 @@ val unlockPremiumPatch = bytecodePatch(
     name = "Unlock Premium features",
     description = "Unlock Premium features. You have to be logged in with an account."
 ) {
-    compatibleWith("fr.chargeprice.app"("3.3.0"))
+    compatibleWith(Constants.COMPATIBILITY_CHARGEPRICE)
 
     execute {
         userSettingParserFingerprint.method.addInstructions(

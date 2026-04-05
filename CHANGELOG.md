@@ -1,3 +1,31 @@
+# [2.2.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.3...v2.2.0-dev.4) (2026-04-05)
+
+
+### Features
+
+* **Mapy:** Update support to latest version ([374798f](https://github.com/brosssh/morphe-patches/commit/374798fa1ceceedf7c85dcd69213ac6d67b6c45c))
+
+# [2.2.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.2...v2.2.0-dev.3) (2026-03-26)
+
+
+### Features
+
+* **Instagram:** Make Fingerprints objects + default patches ([dd9c91c](https://github.com/brosssh/morphe-patches/commit/dd9c91c05812d106c27e16ff569ec59320a12dfe))
+
+# [2.2.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.1...v2.2.0-dev.2) (2026-03-26)
+
+
+### Features
+
+* Remove more ads ([4710465](https://github.com/brosssh/morphe-patches/commit/47104652af24d30bcf678a58ac2d46d9d5486788))
+
+# [2.2.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.1.0...v2.2.0-dev.1) (2026-03-26)
+
+
+### Features
+
+* More Instagram patches ported from ReVanced ([1f4dd75](https://github.com/brosssh/morphe-patches/commit/1f4dd75c9c6baab605f654624e8d9c7aa3a34592))
+
 # [2.1.0](https://github.com/brosssh/morphe-patches/compare/v2.0.0...v2.1.0) (2026-03-24)
 
 

@@ -54,21 +54,11 @@ import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMuta
 import app.morphe.patcher.util.smali.ExternalLabel
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
-import com.android.tools.smali.dexlib2.Opcode.CONST_STRING
-import com.android.tools.smali.dexlib2.Opcode.MOVE_RESULT
-import com.android.tools.smali.dexlib2.Opcode.MOVE_RESULT_OBJECT
-import com.android.tools.smali.dexlib2.Opcode.MOVE_RESULT_WIDE
-import com.android.tools.smali.dexlib2.Opcode.RETURN
-import com.android.tools.smali.dexlib2.Opcode.RETURN_OBJECT
-import com.android.tools.smali.dexlib2.Opcode.RETURN_WIDE
+import com.android.tools.smali.dexlib2.Opcode.*
 import com.android.tools.smali.dexlib2.iface.ClassDef
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.MethodParameter
-import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.Instruction
-import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
-import com.android.tools.smali.dexlib2.iface.instruction.WideLiteralInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.*
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.iface.reference.Reference
@@ -524,8 +514,7 @@ fun Method.indexOfFirstInstructionOrThrow(startIndex: Int = 0, filter: Instructi
 
 fun Method.indexOfFirstStringInstruction(str: String) =
     indexOfFirstInstruction {
-        opcode == CONST_STRING &&
-                getReference<StringReference>()?.string == str
+        getReference<StringReference>()?.string == str
     }
 
 fun Method.indexOfFirstStringInstructionOrThrow(str: String): Int {

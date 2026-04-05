@@ -1,16 +1,6 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0-dev.4",
   "patches": [
-    {
-      "name": "Bypass signature check",
-      "description": null,
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "cz.seznam.mapy": null
-      },
-      "options": []
-    },
     {
       "name": "Change link sharing domain",
       "description": "Replaces the domain name of Instagram links when sharing them.",
@@ -98,7 +88,7 @@
     {
       "name": "Hide ads",
       "description": null,
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
@@ -189,6 +179,18 @@
       ]
     },
     {
+      "name": "Hide suggested content",
+      "description": "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "422.0.0.0.35"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Limit feed to followed profiles",
       "description": "Filters the home feed to display only content from profiles you follow.",
       "use": false,
@@ -219,7 +221,7 @@
     {
       "name": "Remove build expired popup",
       "description": "Removes the popup that appears after a while, when the app version ages.",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
@@ -321,7 +323,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "cz.seznam.mapy": [
-          "9.70.1"
+          "26.3.1"
         ]
       },
       "options": []

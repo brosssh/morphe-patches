@@ -1,5 +1,6 @@
 package app.morphe.patches.hevy.subscription
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patches.shared.misc.hex.Replacement
 import app.morphe.patches.shared.misc.hex.hexPatch
@@ -10,7 +11,7 @@ val unlockSubscriptionPatch = rawResourcePatch(
     description = "Unlocks Pro features. Most features in this app are server sided, so they can't be patched. " +
             "This should unlock everything which is possible to patch.",
 ) {
-    compatibleWith("com.hevy"("2.0.0"))
+    compatibleWith(Constants.COMPATIBILITY_HEVY)
 
     dependsOn (
         hexPatch {

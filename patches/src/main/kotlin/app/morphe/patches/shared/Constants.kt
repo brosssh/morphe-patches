@@ -22,6 +22,7 @@ object Constants {
         name = "Geocaching",
         packageName = "com.groundspeak.geocaching.intro",
         appIconColor = 0X1AB268,
+        targets = listOf(AppTarget(version = null)),
     )
 
     val COMPATIBILITY_HEVY = Compatibility(
@@ -42,13 +43,7 @@ object Constants {
         name = "Mapy.com",
         packageName = "cz.seznam.mapy",
         appIconColor = 0x32CF11,
-    )
-
-    val COMPATIBILITY_MAPY_9_70_1 = Compatibility(
-        name = "Mapy.com",
-        packageName = "cz.seznam.mapy",
-        appIconColor = 0x32CF11,
-        targets = listOf(AppTarget(version = "9.70.1")),
+        targets = listOf(AppTarget(version = "26.3.1")),
     )
 
     val COMPATIBILITY_PARK4NIGHT = Compatibility(

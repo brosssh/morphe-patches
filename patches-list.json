@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0-dev.4",
+  "version": "2.2.0-dev.5",
   "patches": [
     {
       "name": "Change link sharing domain",
@@ -251,7 +251,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "fr.chargeprice.app": [
-          "3.3.0"
+          "3.9.2"
         ]
       },
       "options": []

@@ -1,3 +1,10 @@
+# [2.2.0-dev.5](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.4...v2.2.0-dev.5) (2026-04-06)
+
+
+### Features
+
+* **Chargeprice:** Update support to latest version ([dd1a33d](https://github.com/brosssh/morphe-patches/commit/dd1a33d58b0a4425959350d230fb181393454ce0))
+
 # [2.2.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.2.0-dev.3...v2.2.0-dev.4) (2026-04-05)
 
 

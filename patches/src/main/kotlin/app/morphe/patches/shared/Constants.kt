@@ -15,7 +15,7 @@ object Constants {
         name = "Chargeprice",
         packageName = "fr.chargeprice.app",
         appIconColor = 0x007AFF,
-        targets = listOf(AppTarget(version = "3.3.0")),
+        targets = listOf(AppTarget(version = "3.9.2")),
     )
 
     val COMPATIBILITY_GEOCACHING = Compatibility(

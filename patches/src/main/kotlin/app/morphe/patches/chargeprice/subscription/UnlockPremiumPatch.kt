@@ -1,8 +1,8 @@
 package app.morphe.patches.chargeprice.subscription
 
-import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.shared.Constants
 
 @Suppress("unused")
 val unlockPremiumPatch = bytecodePatch(
@@ -12,7 +12,7 @@ val unlockPremiumPatch = bytecodePatch(
     compatibleWith(Constants.COMPATIBILITY_CHARGEPRICE)
 
     execute {
-        userSettingParserFingerprint.method.addInstructions(
+        UserSettingParserFingerprint.method.addInstructions(
             0,
             """
                 new-instance v0, Ljava/util/ArrayList;

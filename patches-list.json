@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0-dev.5",
+  "version": "2.2.0",
   "patches": [
     {
       "name": "Change link sharing domain",

@@ -1,18 +1,16 @@
 package app.morphe.patches.instagram.feed
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.patch.BytecodePatchContext
 
-internal val mainFeedRequestClassFingerprint = Fingerprint (
+internal object MainFeedRequestClassFingerprint : Fingerprint (
     strings = listOf("Request{mReason=", ", mInstanceNumber=")
 )
 
-context(BytecodePatchContext)
-internal val initMainFeedRequestFingerprint get() = Fingerprint(
+internal object InitMainFeedRequestFingerprint : Fingerprint(
     name =  "<init>",
-    definingClass = mainFeedRequestClassFingerprint.classDef.type
+    classFingerprint = MainFeedRequestClassFingerprint
 )
 
-internal val mainFeedHeaderMapFinderFingerprint = Fingerprint (
+internal object MainFeedHeaderMapFinderFingerprint : Fingerprint (
     strings = listOf("pagination_source", "FEED_REQUEST_SENT")
 )

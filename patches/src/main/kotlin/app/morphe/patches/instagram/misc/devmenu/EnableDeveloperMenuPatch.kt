@@ -22,8 +22,8 @@ val enableDeveloperMenuPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
-        with(clearNotificationReceiverFingerprint.method) {
-            indexOfFirstInstructionReversedOrThrow(clearNotificationReceiverFingerprint.stringMatches.first().index) {
+        with(ClearNotificationReceiverFingerprint.method) {
+            indexOfFirstInstructionReversedOrThrow(ClearNotificationReceiverFingerprint.stringMatches.first().index) {
                 val reference = getReference<MethodReference>()
                 opcode in listOf(Opcode.INVOKE_STATIC, Opcode.INVOKE_STATIC_RANGE) &&
                         reference?.parameterTypes?.size == 1 &&

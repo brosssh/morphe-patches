@@ -15,12 +15,12 @@ val disableReelsScrollingPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
-        val viewPagerField = clipsViewPagerImplGetViewAtIndexFingerprint.classDef.fields.first {
+        val viewPagerField = ClipsViewPagerImplGetViewAtIndexFingerprint.classDef.fields.first {
             it.type == "Landroidx/viewpager2/widget/ViewPager2;"
         }
 
         // Disable user input on the ViewPager2 to prevent scrolling.
-        clipsViewPagerImplGetViewAtIndexFingerprint.method.addInstructions(
+        ClipsViewPagerImplGetViewAtIndexFingerprint.method.addInstructions(
             0,
             """
                iget-object v0, p0, $viewPagerField
@@ -30,6 +30,6 @@ val disableReelsScrollingPatch = bytecodePatch(
         )
 
         // Return false in onInterceptTouchEvent to disable pull-to-refresh.
-        clipsSwipeRefreshLayoutOnInterceptTouchEventFingerprint.method.returnEarly(false)
+        ClipsSwipeRefreshLayoutOnInterceptTouchEventFingerprint.method.returnEarly(false)
     }
 }

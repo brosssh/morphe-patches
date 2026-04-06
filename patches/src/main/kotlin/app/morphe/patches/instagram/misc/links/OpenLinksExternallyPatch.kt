@@ -23,7 +23,7 @@ val openLinksExternallyPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {
-        inAppBrowserFunctionFingerprint.let {
+        InAppBrowserFunctionFingerprint.let {
             val stringMatchIndex = it.stringMatches.first { match -> match.string == TARGET_STRING }.index
 
             it.method.apply {

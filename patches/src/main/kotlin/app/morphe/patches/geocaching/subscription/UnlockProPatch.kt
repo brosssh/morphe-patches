@@ -1,5 +1,6 @@
 package app.morphe.patches.geocaching.subscription
 
+import app.morphe.patches.shared.Constants
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
@@ -14,7 +15,7 @@ val unlockPremiumPatch = bytecodePatch(
     description = "WARNING: This only works via mount install (root required). " +
             "Unlock Premium features. Lists are still locked as they are server sided."
 ) {
-    compatibleWith("com.groundspeak.geocaching.intro")
+    compatibleWith(Constants.COMPATIBILITY_GEOCACHING)
 
     execute {
         fun overrideRegister(fingerprint: Fingerprint, indexToOverride: Int) {

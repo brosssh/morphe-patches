@@ -4,7 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.OpcodesFilter
 import com.android.tools.smali.dexlib2.Opcode
 
-internal val permalinkResponseJsonParserFingerprint = Fingerprint (
+internal object PermalinkResponseJsonParserFingerprint : Fingerprint (
     strings = listOf("permalink"),
     filters = OpcodesFilter.opcodesToFilters(
         Opcode.NEW_INSTANCE,
@@ -14,12 +14,12 @@ internal val permalinkResponseJsonParserFingerprint = Fingerprint (
     name = "unsafeParseFromJson"
 )
 
-internal val storyUrlResponseJsonParserFingerprint = Fingerprint (
+internal object StoryUrlResponseJsonParserFingerprint : Fingerprint (
     strings = listOf("story_item_to_share_url"),
     name = "unsafeParseFromJson"
 )
 
-internal val profileUrlResponseJsonParserFingerprint = Fingerprint (
+internal object ProfileUrlResponseJsonParserFingerprint : Fingerprint (
     strings = listOf("profile_to_share_url"),
     name = "unsafeParseFromJson"
 )

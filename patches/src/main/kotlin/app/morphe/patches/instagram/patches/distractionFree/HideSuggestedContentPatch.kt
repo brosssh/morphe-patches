@@ -28,7 +28,8 @@ private object FeedItemParseFromJsonFingerprint : Fingerprint(
 @Suppress("unused")
 val hideSuggestedContent = bytecodePatch(
     name = "Hide suggested content",
-    description = "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown)."
+    description = "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

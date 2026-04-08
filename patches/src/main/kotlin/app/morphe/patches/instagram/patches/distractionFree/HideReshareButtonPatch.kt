@@ -35,7 +35,8 @@ private object LiveTreeGetOptionalBooleanFingerprint : Fingerprint (
 @Suppress("unused")
 val hideReshareButtonPatch = bytecodePatch(
     name = "Hide reshare button",
-    description = "Hides the reshare button from both posts and reels."
+    description = "Hides the reshare button from both posts and reels.",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

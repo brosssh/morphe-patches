@@ -15,7 +15,8 @@ private object AdInjectorFingerprint : Fingerprint(
 
 @Suppress("unused")
 val hideAdsPatch = bytecodePatch(
-    name = "Hide ads"
+    name = "Hide ads",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

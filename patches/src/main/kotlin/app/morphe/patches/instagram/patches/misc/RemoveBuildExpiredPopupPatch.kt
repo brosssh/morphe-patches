@@ -17,7 +17,8 @@ object SnoozeExpirationManagerInitFingerprint : Fingerprint(
 @Suppress("unused")
 val removeBuildExpiredPopupPatch = bytecodePatch(
     name = "Remove build expired popup",
-    description = "Removes the popup that appears after a while, when the app version ages."
+    description = "Removes the popup that appears after a while, when the app version ages.",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

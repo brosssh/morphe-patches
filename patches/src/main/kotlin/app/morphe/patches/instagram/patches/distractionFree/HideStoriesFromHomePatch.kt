@@ -21,7 +21,8 @@ private object GetOrCreateAvatarViewFingerprint : Fingerprint(
 @Suppress("unused")
 val hideStoriesFromHomePatch = bytecodePatch(
     name = "Hide Stories from Home",
-    description = "Hides Stories from the main page, by removing the buttons."
+    description = "Hides Stories from the main page, by removing the buttons.",
+    default = false
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

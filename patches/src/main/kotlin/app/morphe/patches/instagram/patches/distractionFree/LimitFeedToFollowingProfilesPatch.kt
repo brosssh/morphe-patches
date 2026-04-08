@@ -4,8 +4,8 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.patches.extension.instagramExtensionPatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
+import app.morphe.patches.instagram.patches.extension.instagramExtensionPatch
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -30,7 +30,8 @@ private object MainFeedHeaderMapFinderFingerprint : Fingerprint (
 @Suppress("unused")
 val limitFeedToFollowingProfiles = bytecodePatch(
     name = "Limit feed to following profiles",
-    description = "Filters the home feed to display only content from profiles you follow."
+    description = "Filters the home feed to display only content from profiles you follow.",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

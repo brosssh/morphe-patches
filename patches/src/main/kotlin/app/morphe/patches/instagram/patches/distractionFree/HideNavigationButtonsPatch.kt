@@ -4,8 +4,8 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.booleanOption
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.instagram.patches.extension.instagramExtensionPatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
+import app.morphe.patches.instagram.patches.extension.instagramExtensionPatch
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.findFreeRegister
 import app.morphe.util.getReference
@@ -36,7 +36,8 @@ private object NavigationButtonsEnumInitFingerprint : Fingerprint (
 @Suppress("unused")
 val hideNavigationButtonsPatch = bytecodePatch(
     name = "Hide navigation buttons",
-    description = "Hides navigation bar buttons, such as the Reels and Create button."
+    description = "Hides navigation bar buttons, such as the Reels and Create button.",
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 

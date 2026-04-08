@@ -1,8 +1,8 @@
 package app.morphe.patches.calistree.pro
 
-import app.morphe.patches.shared.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.Constants
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21t
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -26,7 +26,7 @@ val unlockProPatch = bytecodePatch(
                 ((it as ReferenceInstruction).reference as StringReference).string == "subscriptions"
             }
 
-            val entitlementsInstruction = implementation!!.instructions.first { it ->
+            val entitlementsInstruction = implementation!!.instructions.first {
                 if (it.opcode != Opcode.CONST_STRING) return@first false
 
                 ((it as ReferenceInstruction).reference as StringReference).string == "entitlements"

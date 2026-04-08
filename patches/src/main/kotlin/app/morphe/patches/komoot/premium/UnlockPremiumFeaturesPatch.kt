@@ -1,6 +1,6 @@
 package app.morphe.patches.komoot.premium
 
-import app.morphe.patches.shared.Constants
+import app.morphe.patches.Constants
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch

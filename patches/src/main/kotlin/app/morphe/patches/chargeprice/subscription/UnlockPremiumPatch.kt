@@ -2,7 +2,7 @@ package app.morphe.patches.chargeprice.subscription
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.shared.Constants
+import app.morphe.patches.Constants
 
 @Suppress("unused")
 val unlockPremiumPatch = bytecodePatch(

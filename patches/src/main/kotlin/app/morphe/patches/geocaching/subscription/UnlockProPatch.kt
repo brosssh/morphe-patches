@@ -1,6 +1,6 @@
 package app.morphe.patches.geocaching.subscription
 
-import app.morphe.patches.shared.Constants
+import app.morphe.patches.Constants
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction

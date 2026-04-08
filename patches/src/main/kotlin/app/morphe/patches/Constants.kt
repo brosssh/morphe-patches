@@ -7,7 +7,7 @@ object Constants {
     val COMPATIBILITY_INSTAGRAM = Compatibility(
         name = "Instagram",
         packageName = "com.instagram.android",
-        targets = listOf(AppTarget(version = "423.0.0.47.66"))
+        targets = listOf(AppTarget(version = "424.0.0.49.64"))
     )
     val COMPATIBILITY_CALISTREE = Compatibility(
         name = "Calistree",

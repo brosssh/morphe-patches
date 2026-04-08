@@ -8,9 +8,8 @@ import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
 import com.android.tools.smali.dexlib2.Opcode
 
 private object GetOrCreateAvatarViewFingerprint : Fingerprint(
-    parameters = emptyList(),
-    returnType = "L",
-    definingClass = "Lcom/instagram/reels/ui/views/reelavatar/RecyclerReelAvatarView;",
+    name = "getOrCreateAvatarView",
+    definingClass = "/RecyclerReelAvatarView;",
     filters = OpcodesFilter.opcodesToFilters(
         Opcode.INVOKE_VIRTUAL,
         Opcode.IPUT_OBJECT,

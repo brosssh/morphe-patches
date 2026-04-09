@@ -8,7 +8,7 @@ This repository contains patches I made for some apps I care about.
 
 | App            | Package                            | Patches                                   |
 |----------------|------------------------------------|-------------------------------------------|
-| Instagram      | `com.instagram.android`            | Distraction free                          |
+| Instagram      | `com.instagram.android`            | <ul><li>Hide Ads</li></ul><ul><li>Hide suggested content</li></ul><ul><li>Limit feed to following profiles</li></ul><ul><li>Hide navigation buttons</li></ul><ul><li>Hide explore feed</li></ul><ul><li>Disable reels scrolling</li></ul><ul><li>Hide stories from home</li></ul><ul><li>Hide reshare/repost button</li></ul>|
 | Chargeprice    | `fr.chargeprice.app`               | <ul><li>Unlock Premium features</li></ul> |
 | Komoot         | `de.komoot.android`                | <ul><li>Unlock Premium features</li></ul> |
 | Mapy           | `cz.seznam.mapy`                   | <ul><li>Unlock Premium features</li></ul> |

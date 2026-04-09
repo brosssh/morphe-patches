@@ -1,3 +1,5 @@
+# [2.3.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.3.0-dev.3...v2.3.0-dev.4) (2026-04-09)
+
 # [2.3.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0-dev.1) (2026-04-09)
 
 ### Features

@@ -36,7 +36,7 @@ private object NavigationButtonsEnumInitFingerprint : Fingerprint (
 @Suppress("unused")
 val hideNavigationButtonsPatch = bytecodePatch(
     name = "Hide navigation buttons",
-    description = "Hides navigation bar buttons, such as the Reels and Create button.",
+    description = "Hides navigation bar buttons, such as the Reels and Create button. Choose what button to hide using the patch options.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
@@ -47,7 +47,7 @@ val hideNavigationButtonsPatch = bytecodePatch(
         key = "hideHome",
         default = false,
         title = "Hide Home",
-        description = "Permanently hides the Home button. App starts at next available tab." // On the "homecoming" / current instagram layout.
+        description = "Permanently hides the Home button. App starts at next available tab."
     )
 
     val hideReels by booleanOption(

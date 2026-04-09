@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-09T08:27:02",
-  "description": "# [2.3.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0-dev.1) (2026-04-09)\n\n\n### Features\n\n* **Instagram:** Patches refactor ([#106](https://github.com/brosssh/morphe-patches/issues/106)) ([1b6a81e](https://github.com/brosssh/morphe-patches/commit/1b6a81e3dbe04a25b50d424fe8bda22e35d3640e))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0-dev.1/patches-2.3.0-dev.1.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0-dev.1/patches-2.3.0-dev.1.mpp.asc",
-  "version": "2.3.0-dev.1"
+  "created_at": "2026-04-09T09:44:31",
+  "description": "# [2.3.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.3.0-dev.1...v2.3.0-dev.2) (2026-04-09)\n\n\n### Bug Fixes\n\n* Changelog ([883f75d](https://github.com/brosssh/morphe-patches/commit/883f75d69a5793b961b7d0368beffcc460db0a03))\n* Changelog ([5f40d0d](https://github.com/brosssh/morphe-patches/commit/5f40d0dc775be0b8090ffa0f7b1010a1ec0c13d6))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0-dev.2/patches-2.3.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0-dev.2/patches-2.3.0-dev.2.mpp.asc",
+  "version": "2.3.0-dev.2"
 }

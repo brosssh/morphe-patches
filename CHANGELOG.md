@@ -1,3 +1,11 @@
+# [2.3.0-dev.4](https://github.com/brosssh/morphe-patches/compare/v2.3.0-dev.3...v2.3.0-dev.4) (2026-04-09)
+
+# [2.3.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0-dev.1) (2026-04-09)
+
+### Features
+
+* **Instagram:** Patches refactor ([#106](https://github.com/brosssh/morphe-patches/issues/106)) ([1b6a81e](https://github.com/brosssh/morphe-patches/commit/1b6a81e3dbe04a25b50d424fe8bda22e35d3640e))
+
 # [2.2.0](https://github.com/brosssh/morphe-patches/compare/v2.1.0...v2.2.0) (2026-04-06)
 
 

@@ -1,74 +1,14 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0-dev.4",
   "patches": [
-    {
-      "name": "Change link sharing domain",
-      "description": "Replaces the domain name of Instagram links when sharing them.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": [
-        {
-          "key": "domainName",
-          "title": "Domain name",
-          "description": "The domain name to use when sharing links.",
-          "required": false,
-          "type": "kotlin.String",
-          "default": "imginn.com",
-          "values": null
-        }
-      ]
-    },
     {
       "name": "Disable Reels scrolling",
       "description": "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Disable analytics",
-      "description": "Disables analytics that are sent periodically.",
-      "use": false,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Disable story auto flipping",
-      "description": "Disable stories automatically flipping/skipping after some seconds.",
-      "use": false,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Enable developer menu",
-      "description": "Enables the developer menu, which can be found at the bottom of settings menu with name 'Internal Settings'.\n\nIt is recommended to use this patch with an alpha/beta Instagram release. Patching a stable release works, but the developer menu shows the developer flags as numbers and does not show a human readable description.",
-      "use": false,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
@@ -80,7 +20,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
@@ -92,7 +32,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
@@ -100,25 +40,25 @@
     {
       "name": "Hide explore feed",
       "description": "Hides posts and reels from the explore/search page.",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
     },
     {
       "name": "Hide navigation buttons",
-      "description": "Hides navigation bar buttons, such as the Reels and Create button.",
-      "use": false,
+      "description": "Hides navigation bar buttons, such as the Reels and Create button. Choose what button to hide using the patch options.",
+      "use": true,
       "dependencies": [
         "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": [
@@ -179,41 +119,39 @@
       ]
     },
     {
+      "name": "Hide reshare button",
+      "description": "Hides the reshare button from both posts and reels.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Hide suggested content",
       "description": "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
     },
     {
-      "name": "Limit feed to followed profiles",
+      "name": "Limit feed to following profiles",
       "description": "Filters the home feed to display only content from profiles you follow.",
-      "use": false,
+      "use": true,
       "dependencies": [
         "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Open links externally",
-      "description": "Changes links to always open in your external browser, instead of the in-app browser.",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
@@ -225,21 +163,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
-          "422.0.0.0.35"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Sanitize sharing URLs",
-      "description": "Sanitize sharing URLs by removing tracking IDs",
-      "use": false,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.instagram.android": [
-          "422.0.0.0.35"
+          "424.0.0.49.64"
         ]
       },
       "options": []
@@ -258,48 +182,12 @@
     },
     {
       "name": "Unlock Premium features",
-      "description": "WARNING: This only works via mount install (root required). Unlock Premium features. Lists are still locked as they are server sided.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.groundspeak.geocaching.intro": null
-      },
-      "options": []
-    },
-    {
-      "name": "Unlock Premium features",
       "description": "Unlock Premium features. Some features are not possible to patch (server sided), such as saving a multi-days hike.",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "de.komoot.android": [
           "2025.38.2"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Unlock Pro features",
-      "description": "Unlock Pro features. Sometimes the app forget about my patches and a popup screen asking to subscribe will be shown. In this screen, just swipe down to refresh and the app will have Pro features again.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.calistree.calistree": [
-          "4.17.8"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Unlock Pro features",
-      "description": "Unlocks Pro features. Most features in this app are server sided, so they can't be patched. This should unlock everything which is possible to patch.",
-      "use": true,
-      "dependencies": [
-        "RawResourcePatch"
-      ],
-      "compatiblePackages": {
-        "com.hevy": [
-          "2.0.0"
         ]
       },
       "options": []

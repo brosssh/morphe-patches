@@ -1,0 +1,46 @@
+name: ⭐ Feature request
+description: Create a detailed request for a new feature.
+title: 'feat(Instagram): '
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # New feature request
+
+        Before creating a new feature request, please keep the following in mind:
+
+        - I am currently only accepting feature requests for Instagram.
+        - The feature **must** aim to a distraction-free experience.
+        - **Do not submit a duplicate feature request**: Search for existing feature requests, including closed issues, [here](https://github.com/brosssh/morphe-patches/issues?q=is%3Aissue).
+  - type: textarea
+    attributes:
+      label: Feature description
+      description: |
+        - Describe your feature in detail
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: |
+        A strong motivation is necessary for a feature request to be considered.
+        
+        - Why should this feature be implemented? 
+        - What is the explicit use case?
+        - What are the benefits?
+        - What makes this feature important?
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      description: Your feature request will be closed if you don't follow the checklist below.
+      options:
+        - label: I have checked all open and closed feature requests and this is not a duplicate
+          required: true
+        - label: This is a feature request for Instagram
+          required: true
+        - label: This is a feature request that aims to a distraction-free experience
+          required: true

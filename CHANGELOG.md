@@ -1,3 +1,10 @@
+## [2.3.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.0...v2.3.1-dev.1) (2026-04-10)
+
+
+### Bug Fixes
+
+* Add `Bypass signature check` patch to fix crash on startup ([2a8b531](https://github.com/brosssh/morphe-patches/commit/2a8b5317c202a1ea7e872719b28e90d8edd13e76))
+
 # [2.3.0](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0) (2026-04-09)
 
 

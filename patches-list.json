@@ -1,6 +1,18 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1-dev.1",
   "patches": [
+    {
+      "name": "Bypass signature check",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
     {
       "name": "Disable Reels scrolling",
       "description": "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",

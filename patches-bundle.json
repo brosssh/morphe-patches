@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-09T10:05:18",
-  "description": "# [2.3.0](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0) (2026-04-09)\n\n\n### Features\n\n* **Instagram:** Patches refactor ([#106](https://github.com/brosssh/morphe-patches/issues/106)) ([1b6a81e](https://github.com/brosssh/morphe-patches/commit/1b6a81e3dbe04a25b50d424fe8bda22e35d3640e))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0/patches-2.3.0.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0/patches-2.3.0.mpp.asc",
-  "version": "2.3.0"
+  "created_at": "2026-04-10T07:06:59",
+  "description": "## [2.3.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.0...v2.3.1-dev.1) (2026-04-10)\n\n\n### Bug Fixes\n\n* Add `Bypass signature check` patch to fix crash on startup ([2a8b531](https://github.com/brosssh/morphe-patches/commit/2a8b5317c202a1ea7e872719b28e90d8edd13e76))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.1-dev.1/patches-2.3.1-dev.1.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.1-dev.1/patches-2.3.1-dev.1.mpp.asc",
+  "version": "2.3.1-dev.1"
 }

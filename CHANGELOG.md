@@ -1,3 +1,10 @@
+# [2.4.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.1-dev.1...v2.4.0-dev.1) (2026-04-12)
+
+
+### Features
+
+* Add `Hide feed content` patch ([#130](https://github.com/brosssh/morphe-patches/issues/130)) ([003decc](https://github.com/brosssh/morphe-patches/commit/003decc5b7a4422ac870582d4ff91d15775aaa56))
+
 ## [2.3.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.0...v2.3.1-dev.1) (2026-04-10)
 
 

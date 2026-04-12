@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-10T07:06:59",
-  "description": "## [2.3.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.0...v2.3.1-dev.1) (2026-04-10)\n\n\n### Bug Fixes\n\n* Add `Bypass signature check` patch to fix crash on startup ([2a8b531](https://github.com/brosssh/morphe-patches/commit/2a8b5317c202a1ea7e872719b28e90d8edd13e76))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.1-dev.1/patches-2.3.1-dev.1.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.1-dev.1/patches-2.3.1-dev.1.mpp.asc",
-  "version": "2.3.1-dev.1"
+  "created_at": "2026-04-12T16:49:56",
+  "description": "# [2.4.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.1-dev.1...v2.4.0-dev.1) (2026-04-12)\n\n\n### Features\n\n* Add `Hide feed content` patch ([#130](https://github.com/brosssh/morphe-patches/issues/130)) ([003decc](https://github.com/brosssh/morphe-patches/commit/003decc5b7a4422ac870582d4ff91d15775aaa56))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.0-dev.1/patches-2.4.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.0-dev.1/patches-2.4.0-dev.1.mpp.asc",
+  "version": "2.4.0-dev.1"
 }

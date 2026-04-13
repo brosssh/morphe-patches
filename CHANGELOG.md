@@ -3,12 +3,12 @@
 
 ### Bug Fixes
 
-* Add `Bypass signature check` patch to fix crash on startup ([2a8b531](https://github.com/brosssh/morphe-patches/commit/2a8b5317c202a1ea7e872719b28e90d8edd13e76))
+* **Instagram:** Add `Bypass signature check` patch to fix crash on startup ([2a8b531](https://github.com/brosssh/morphe-patches/commit/2a8b5317c202a1ea7e872719b28e90d8edd13e76))
 
 
 ### Features
 
-* Add `Hide feed content` patch ([#130](https://github.com/brosssh/morphe-patches/issues/130)) ([003decc](https://github.com/brosssh/morphe-patches/commit/003decc5b7a4422ac870582d4ff91d15775aaa56))
+* **Instagram:** Add `Hide feed content` patch ([#130](https://github.com/brosssh/morphe-patches/issues/130)) ([003decc](https://github.com/brosssh/morphe-patches/commit/003decc5b7a4422ac870582d4ff91d15775aaa56))
 * **Instagram:** Add `Disable story auto flipping` patch ([9682fa8](https://github.com/brosssh/morphe-patches/commit/9682fa855c039a814834497bdadffdb33293b339))
 * **Instagram:** Add `Hide notes tray` patch ([a4f168c](https://github.com/brosssh/morphe-patches/commit/a4f168c8f3e51c5d385e25e14480734c5326240d))
 

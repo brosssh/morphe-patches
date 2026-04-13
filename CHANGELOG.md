@@ -1,3 +1,10 @@
+# [2.4.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.4.0-dev.1...v2.4.0-dev.2) (2026-04-13)
+
+
+### Features
+
+* **Instagram:** Add `Hide notes tray` patch ([a4f168c](https://github.com/brosssh/morphe-patches/commit/a4f168c8f3e51c5d385e25e14480734c5326240d))
+
 # [2.4.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.3.1-dev.1...v2.4.0-dev.1) (2026-04-12)
 
 

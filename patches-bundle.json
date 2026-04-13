@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-09T10:05:18",
-  "description": "# [2.3.0](https://github.com/brosssh/morphe-patches/compare/v2.2.0...v2.3.0) (2026-04-09)\n\n\n### Features\n\n* **Instagram:** Patches refactor ([#106](https://github.com/brosssh/morphe-patches/issues/106)) ([1b6a81e](https://github.com/brosssh/morphe-patches/commit/1b6a81e3dbe04a25b50d424fe8bda22e35d3640e))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0/patches-2.3.0.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.3.0/patches-2.3.0.mpp.asc",
-  "version": "2.3.0"
+  "created_at": "2026-04-13T12:55:20",
+  "description": "# [2.4.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.4.0-dev.2...v2.4.0-dev.3) (2026-04-13)\n\n\n### Features\n\n* **Instagram:** Add `Disable story auto flipping` patch ([9682fa8](https://github.com/brosssh/morphe-patches/commit/9682fa855c039a814834497bdadffdb33293b339))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.0-dev.3/patches-2.4.0-dev.3.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.0-dev.3/patches-2.4.0-dev.3.mpp.asc",
+  "version": "2.4.0-dev.3"
 }

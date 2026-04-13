@@ -1,9 +1,33 @@
 {
-  "version": "2.3.0",
+  "version": "2.4.0-dev.3",
   "patches": [
+    {
+      "name": "Bypass signature check",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
     {
       "name": "Disable Reels scrolling",
       "description": "Disables the endless scrolling behavior in Instagram Reels, preventing swiping to the next Reel. Note: On a clean install, the 'Tip' animation may appear but will stop on its own after a few seconds.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable story auto flipping",
+      "description": "Disable stories automatically flipping/skipping after some seconds.",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
@@ -41,6 +65,18 @@
       "name": "Hide explore feed",
       "description": "Hides posts and reels from the explore/search page.",
       "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Hide feed content",
+      "description": "Hide the feed content, leaving only stories in the home page.",
+      "use": false,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [
@@ -117,6 +153,18 @@
           "values": null
         }
       ]
+    },
+    {
+      "name": "Hide notes tray",
+      "description": "Hides the notes tray from the direct tab.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
     },
     {
       "name": "Hide reshare button",

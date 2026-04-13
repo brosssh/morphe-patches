@@ -17,7 +17,7 @@ private object NotesTrayViewInitFingerprint : Fingerprint(
 @Suppress("unused")
 val hideNotesTrayPatch = bytecodePatch(
     name = "Hide notes tray",
-    description = "Hide the notes tray from the direct tab.",
+    description = "Hides the notes tray from the direct tab.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)

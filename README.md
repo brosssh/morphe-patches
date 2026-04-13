@@ -33,3 +33,14 @@ I intentionally keep the number of patches low so they can be better maintained 
 Well you don't really have to choose. With Morphe, patches can be combined from multiple sources. You could add patches from Piko and a specific patch from my repo.
 
 In general, prefer **my repo** if you want **more curated and stable patches** that aims to a distraction free experience, **Piko** is preferred if you want **more features**. 
+
+### Support the project
+If this project was useful for you, consider giving a :star: to this repo.
+
+If you wish to financially contribute, you can donate here:
+
+<a href="https://ko-fi.com/brosssh">
+  <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee at ko-fi.com" />
+</a>
+
+I am very grateful for every (financial and non) contribution to the project!

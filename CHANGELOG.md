@@ -1,3 +1,10 @@
+# [2.4.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.4.0-dev.2...v2.4.0-dev.3) (2026-04-13)
+
+
+### Features
+
+* **Instagram:** Add `Disable story auto flipping` patch ([9682fa8](https://github.com/brosssh/morphe-patches/commit/9682fa855c039a814834497bdadffdb33293b339))
+
 # [2.4.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.4.0-dev.1...v2.4.0-dev.2) (2026-04-13)
 
 

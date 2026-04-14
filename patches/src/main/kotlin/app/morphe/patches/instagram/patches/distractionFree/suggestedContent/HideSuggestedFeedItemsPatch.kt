@@ -1,4 +1,4 @@
-package app.morphe.patches.instagram.patches.distractionFree
+package app.morphe.patches.instagram.patches.distractionFree.suggestedContent
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.patch.bytecodePatch
@@ -25,12 +25,7 @@ private object FeedItemParseFromJsonFingerprint : Fingerprint(
     strings = listOf(*FEED_ITEM_KEYS_TO_BE_HIDDEN, "FeedItem")
 )
 
-@Suppress("unused")
-val hideSuggestedContent = bytecodePatch(
-    name = "Hide suggested content",
-    description = "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
-    default = true
-) {
+val hideSuggestedFeedItems = bytecodePatch {
     compatibleWith(COMPATIBILITY_INSTAGRAM)
 
     execute {

@@ -11,6 +11,7 @@ import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.morphe.util.getReference
 import app.morphe.util.indexOfFirstInstruction
 import app.morphe.util.indexOfFirstStringInstruction
+import app.morphe.util.indexOfFirstStringInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.NarrowLiteralInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.SwitchPayload
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
@@ -52,16 +53,20 @@ internal open class JsonParserFingerprint(
     context(_: BytecodePatchContext)
     private fun normalMatches(): List<JsonParserMatch> =
         normalFingerprint.matchAllOrNull()?.mapNotNull { result ->
-            val allKeysPresent = otherStringKeys.all { key ->
-                result.method.containsKey(key, switchKeys[key])
-            }
-            if (!allKeysPresent) return@mapNotNull null
+            with (result.method) {
+                val allKeysPresent = otherStringKeys.all { key ->
+                    containsKey(key, switchKeys[key])
+                }
+                if (!allKeysPresent) return@mapNotNull null
 
-            JsonParserMatch(
-                method = result.method,
-                matchIndex = normalFingerprint.stringMatches.first().index,
-                isStringMatch = true
-            )
+                val stringMatchIndex = indexOfFirstStringInstructionOrThrow(mainStringKey)
+
+                JsonParserMatch(
+                    method = this,
+                    matchIndex = stringMatchIndex,
+                    isStringMatch = true
+                )
+            }
         } ?: emptyList()
 
     context(_: BytecodePatchContext)

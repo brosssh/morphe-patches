@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-14T14:33:41",
-  "description": "## [2.4.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.4.0...v2.4.1-dev.1) (2026-04-14)\n\n\n### Performance Improvements\n\n* **Instagram:** Add `JsonParserFingerprint` to handle dictionary reference in parsers ([#132](https://github.com/brosssh/morphe-patches/issues/132)) ([86ff579](https://github.com/brosssh/morphe-patches/commit/86ff5793e0385e7325a62ade96896131b0042689))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.1-dev.1/patches-2.4.1-dev.1.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.4.1-dev.1/patches-2.4.1-dev.1.mpp.asc",
-  "version": "2.4.1-dev.1"
+  "created_at": "2026-04-14T14:37:12",
+  "description": "# [2.5.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.4.1-dev.1...v2.5.0-dev.1) (2026-04-14)\n\n\n### Features\n\n* **Instagram:** Add experimental support to 425.0.0.47.61 ([757cb9f](https://github.com/brosssh/morphe-patches/commit/757cb9fbcb8f38e1d53db9b9192feb00c6fe6b68))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.5.0-dev.1/patches-2.5.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.5.0-dev.1/patches-2.5.0-dev.1.mpp.asc",
+  "version": "2.5.0-dev.1"
 }

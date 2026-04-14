@@ -7,13 +7,10 @@ object Constants {
     val COMPATIBILITY_INSTAGRAM = Compatibility(
         name = "Instagram",
         packageName = "com.instagram.android",
-        targets = listOf(AppTarget(version = "424.0.0.49.64"))
-    )
-    val COMPATIBILITY_CALISTREE = Compatibility(
-        name = "Calistree",
-        packageName = "com.calistree.calistree",
-        appIconColor = 0xFDAD16,
-        targets = listOf(AppTarget(version = "4.17.8")),
+        targets = listOf(
+            AppTarget(version = "425.0.0.47.61", isExperimental = true),
+            AppTarget(version = "424.0.0.49.64")
+        )
     )
 
     val COMPATIBILITY_CHARGEPRICE = Compatibility(
@@ -21,13 +18,6 @@ object Constants {
         packageName = "fr.chargeprice.app",
         appIconColor = 0x007AFF,
         targets = listOf(AppTarget(version = "3.9.2")),
-    )
-
-    val COMPATIBILITY_GEOCACHING = Compatibility(
-        name = "Geocaching",
-        packageName = "com.groundspeak.geocaching.intro",
-        appIconColor = 0X1AB268,
-        targets = listOf(AppTarget(version = null)),
     )
 
     val COMPATIBILITY_KOMOOT = Compatibility(

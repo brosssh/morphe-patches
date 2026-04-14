@@ -1,3 +1,17 @@
+# [2.5.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.4.1-dev.1...v2.5.0-dev.1) (2026-04-14)
+
+
+### Features
+
+* **Instagram:** Add experimental support to 425.0.0.47.61 ([757cb9f](https://github.com/brosssh/morphe-patches/commit/757cb9fbcb8f38e1d53db9b9192feb00c6fe6b68))
+
+## [2.4.1-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.4.0...v2.4.1-dev.1) (2026-04-14)
+
+
+### Performance Improvements
+
+* **Instagram:** Add `JsonParserFingerprint` to handle dictionary reference in parsers ([#132](https://github.com/brosssh/morphe-patches/issues/132)) ([86ff579](https://github.com/brosssh/morphe-patches/commit/86ff5793e0385e7325a62ade96896131b0042689))
+
 # [2.4.0](https://github.com/brosssh/morphe-patches/compare/v2.3.0...v2.4.0) (2026-04-13)
 
 

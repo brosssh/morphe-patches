@@ -15,14 +15,15 @@
         ]
       }
     ],
-    ["@semantic-release/release-notes-generator", {
-      "preset": "conventionalcommits",
-      "presetConfig": {
-        "types": [
-          { "type": "bump", "section": "Updated App Support" }
-        ]
-      }
-    }],
+    [
+        "@semantic-release/release-notes-generator", {
+          "presetConfig": {
+            "types": [
+              { "type": "bump", "section": "Updated App Support" }
+            ]
+          }
+        }
+    ],
     [
       "@MorpheApp/changelog", {
         "releaseJson": {

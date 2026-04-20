@@ -1,3 +1,10 @@
+# [2.5.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.5.0-dev.1...v2.5.0-dev.2) (2026-04-20)
+
+
+### Features
+
+* **Instagram:** Add `Disable video autoplay` patch ([2a96ed5](https://github.com/brosssh/morphe-patches/commit/2a96ed5b4d3d3e96dfecb759bf9b5104522d9d6f))
+
 # [2.5.0-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.4.1-dev.1...v2.5.0-dev.1) (2026-04-14)
 
 

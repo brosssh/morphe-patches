@@ -1,5 +1,5 @@
 {
-  "version": "2.5.0-dev.2",
+  "version": "2.5.0",
   "patches": [
     {
       "name": "Bypass signature check",

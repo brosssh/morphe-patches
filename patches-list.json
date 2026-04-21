@@ -1,5 +1,5 @@
 {
-  "version": "2.4.0",
+  "version": "2.5.0-dev.2",
   "patches": [
     {
       "name": "Bypass signature check",
@@ -29,6 +29,18 @@
       "name": "Disable story auto flipping",
       "description": "Disable stories automatically flipping/skipping after some seconds.",
       "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.instagram.android": [
+          "424.0.0.49.64"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable video autoplay",
+      "description": "Disable video autoplay from feed",
+      "use": false,
       "dependencies": [],
       "compatiblePackages": {
         "com.instagram.android": [

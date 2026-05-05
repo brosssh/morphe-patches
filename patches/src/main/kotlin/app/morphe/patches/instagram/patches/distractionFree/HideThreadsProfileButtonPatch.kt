@@ -33,16 +33,18 @@ val hideThreadsProfileButtonPatch = bytecodePatch(
     val buttonIndex by intOption(
         key = "buttonIndex",
         default = 0,
-        title = "Index",
+        title = "Button index",
         description = """
             Position of the button to hide from the profile page action bar (zero-based).
             
             0 = first button (default, targets the Threads button on most accounts).
             1 = second button.
+            2 = third button.
             
             If the Threads button does not disappear, try incrementing this value by 1.
         """.trimIndentMultiline(),
-        required = true
+        required = true,
+        validator = { it!! <= 2 }
     )
 
     execute {

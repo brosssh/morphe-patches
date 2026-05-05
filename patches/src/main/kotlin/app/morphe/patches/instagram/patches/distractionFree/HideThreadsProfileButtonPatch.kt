@@ -7,6 +7,7 @@ import app.morphe.patcher.string
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.trimIndentMultiline
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
@@ -24,7 +25,7 @@ val hideThreadsProfileButtonPatch = bytecodePatch(
     description = """
         Hides the Threads button from the profile page action bar (top right of the profile page).
         The target button position can be changed via the "Button index" option if needed.
-    """,
+    """.trimIndentMultiline(),
     default = false
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)

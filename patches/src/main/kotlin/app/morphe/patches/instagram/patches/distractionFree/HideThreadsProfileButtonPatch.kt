@@ -41,7 +41,7 @@ val hideThreadsProfileButtonPatch = bytecodePatch(
             1 = second button.
             
             If the Threads button does not disappear, try incrementing this value by 1.
-        """,
+        """.trimIndentMultiline(),
         required = true
     )
 

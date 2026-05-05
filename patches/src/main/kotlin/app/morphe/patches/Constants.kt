@@ -8,7 +8,7 @@ object Constants {
         name = "Instagram",
         packageName = "com.instagram.android",
         targets = listOf(
-            AppTarget(version = "425.0.0.47.61", isExperimental = true),
+            AppTarget(version = "425.0.0.47.61"),
             AppTarget(version = "424.0.0.49.64")
         )
     )

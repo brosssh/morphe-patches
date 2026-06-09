@@ -1,6 +1,8 @@
 package app.morphe.extension.instagram.hide.navigation;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @SuppressWarnings("unused")

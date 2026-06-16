@@ -14,7 +14,6 @@ import app.morphe.patcher.opcode
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.patches.instagram.patches.extension.instagramExtensionPatch
-import app.morphe.util.cloneMutable
 import app.morphe.util.cloneMutableAndPreserveParameters
 import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -82,9 +81,6 @@ private val overrideMobileConfigBooleanFlagPatch = bytecodePatch {
                 nop 
                 """
         )
-
-        // Expands the override registers count to allow the override patch to write in it
-        GetOverridesFingerprint.method.cloneMutable(additionalRegisters = 3)
     }
 }
 

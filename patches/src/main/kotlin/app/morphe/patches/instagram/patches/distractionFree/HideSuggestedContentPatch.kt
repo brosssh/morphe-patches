@@ -1,10 +1,20 @@
 package app.morphe.patches.instagram.patches.distractionFree
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
 import app.morphe.patches.instagram.patches.misc.overrideMobileConfigBooleanFlag
+import app.morphe.patches.instagram.utility.JsonParserFingerprint
 import app.morphe.patches.instagram.utility.replaceJsonFieldWithBogus
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+
+private const val EXTENSION_CLASS_DESCRIPTOR =
+    "Lapp/morphe/extension/instagram/hide/suggestedContent/HideSuggestedContentPatch;"
 
 private val FEED_ITEM_KEYS_TO_BE_HIDDEN = arrayOf(
     "clips_netego",
@@ -26,6 +36,11 @@ private object FeedItemParseFromJsonFingerprint : Fingerprint(
     strings = listOf(*FEED_ITEM_KEYS_TO_BE_HIDDEN, "FeedItem")
 )
 
+private object StoryItemParseFromJsonFingerprint : JsonParserFingerprint(
+    "reel_type",
+    "ReelResponseItem"
+)
+
 @Suppress("unused")
 val hideSuggestedContent = bytecodePatch(
     name = "Hide suggested content",
@@ -37,16 +52,37 @@ val hideSuggestedContent = bytecodePatch(
     dependsOn(
         overrideMobileConfigBooleanFlag(
             override = "111509::3" to false // ig_search_ta_nullstate_suggestions::is_android_enabled
-        ),
-        overrideMobileConfigBooleanFlag(
-            override = "82771::0" to false // igx_foundation_litho_stories_tray::is_litho_stories_tray_enabled
         )
     )
 
     execute {
-        val matchedMethod = FeedItemParseFromJsonFingerprint.method
         FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-            matchedMethod.replaceJsonFieldWithBogus(key)
+            FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
+        }
+
+        with(StoryItemParseFromJsonFingerprint.match()) {
+            method.apply {
+                val reelTypeResultIndex = indexOfFirstInstructionOrThrow(matchIndex) {
+                    getReference<MethodReference>()?.returnType == "Ljava/lang/String;"
+                } + 1
+
+                val reelTypeResultRegister = getInstruction<OneRegisterInstruction>(reelTypeResultIndex).registerA
+
+                addInstructionsWithLabels(
+                    reelTypeResultIndex + 1,
+                    """
+                        invoke-static { v$reelTypeResultRegister }, $EXTENSION_CLASS_DESCRIPTOR->getValidStoryType(Ljava/lang/String;)Ljava/lang/String;
+                        move-result-object v$reelTypeResultRegister
+                        
+                        # if getValidStoryType return null, make the method return null
+                        if-nez v$reelTypeResultRegister, :continue
+                        const/4 v$reelTypeResultRegister, 0x0
+                        return-object v$reelTypeResultRegister
+                        :continue
+                        nop
+                    """
+                )
+            }
         }
     }
 }

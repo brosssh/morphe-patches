@@ -8,6 +8,7 @@ package app.morphe.patches.instagram.patches.misc
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
 import app.morphe.patcher.literal
 import app.morphe.patcher.opcode
 import app.morphe.patcher.patch.bytecodePatch
@@ -54,7 +55,7 @@ private val overrideMobileConfigBooleanFlagPatch = bytecodePatch {
     execute {
         val getUniversalIdMethod = GetUniversalIdFingerprint.method
 
-        GetBoolValueForFlagFingerprint.method.cloneMutableAndPreserveParameters().addInstructions(
+        GetBoolValueForFlagFingerprint.method.cloneMutableAndPreserveParameters().addInstructionsWithLabels(
             0,
             """
                 invoke-static {p2, p3}, ${getUniversalIdMethod.definingClass}->${getUniversalIdMethod.name}(J)I

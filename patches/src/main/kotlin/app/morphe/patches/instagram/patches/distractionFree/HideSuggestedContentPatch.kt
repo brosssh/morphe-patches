@@ -3,12 +3,12 @@ package app.morphe.patches.instagram.patches.distractionFree
 import app.morphe.patcher.patch.booleanOption
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
-import app.morphe.patches.instagram.patches.misc.overrideMobileConfigBooleanFlag
+import app.morphe.patches.instagram.misc.overrideMobileConfigBooleanFlag
 
 @Suppress("unused")
 val hideSuggestedContentPatch = bytecodePatch(
     name = "Hide suggested content",
-    description = "Hides suggested stories, reels, threads and survey from feed (Suggested posts will still be shown).",
+    description = "Choose the suggested content to hide using the patch options.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_INSTAGRAM)

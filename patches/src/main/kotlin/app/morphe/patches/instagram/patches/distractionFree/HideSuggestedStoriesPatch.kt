@@ -2,8 +2,7 @@ package app.morphe.patches.instagram.patches.distractionFree
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
-import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
+import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patches.instagram.utility.JsonParserFingerprint
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.findFreeRegister
@@ -30,35 +29,32 @@ private object TrayFingerprint : JsonParserFingerprint(
     "hallpass_share_info"
 )
 
-val hideSuggestedStoriesPatch = bytecodePatch {
-    compatibleWith(COMPATIBILITY_INSTAGRAM)
+context(_: BytecodePatchContext)
+fun hideSuggestedStoriesPatch() = with(TrayFingerprint.match()) {
+    method.apply {
+        val storiesListAssignmentIndex = indexOfFirstInstructionOrThrow(matchIndex) {
+            opcode == Opcode.IPUT_OBJECT && getReference<FieldReference>()?.type == "Ljava/util/List;"
+        }
 
-    execute {
-        with(TrayFingerprint.match()) {
-            method.apply {
-                val storiesListAssignmentIndex = indexOfFirstInstructionOrThrow(matchIndex) {
-                    opcode == Opcode.IPUT_OBJECT && getReference<FieldReference>()?.type == "Ljava/util/List;"
-                }
+        val storiesListRegister =
+            getInstruction<TwoRegisterInstruction>(storiesListAssignmentIndex).registerA
 
-                val storiesListRegister = getInstruction<TwoRegisterInstruction>(storiesListAssignmentIndex).registerA
+        val freeRegister = findFreeRegister(
+            storiesListAssignmentIndex,
+            storiesListRegister
+        )
 
-                val freeRegister = findFreeRegister(
-                    storiesListAssignmentIndex,
-                    storiesListRegister
-                )
+        val reelTypeFieldName = ReelResponseItemFingerprint.classDef.fields.first {
+            ReelTypeEnumFingerprint.matchAll().map { it.classDef.type }.contains(it.type)
+        }.name
 
-                val reelTypeFieldName = ReelResponseItemFingerprint.classDef.fields.first {
-                    ReelTypeEnumFingerprint.matchAll().map { it.classDef.type }.contains(it.type)
-                }.name
-
-                addInstructionsAtControlFlowLabel(storiesListAssignmentIndex,
-                    """
+        addInstructionsAtControlFlowLabel(
+            storiesListAssignmentIndex,
+            """
                         const-string v$freeRegister, "$reelTypeFieldName"
                         invoke-static { v$storiesListRegister, v$freeRegister }, $EXTENSION_CLASS_DESCRIPTOR->removeSuggestedStories(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
                         move-result-object v$storiesListRegister
                     """
-                )
-            }
-        }
+        )
     }
 }

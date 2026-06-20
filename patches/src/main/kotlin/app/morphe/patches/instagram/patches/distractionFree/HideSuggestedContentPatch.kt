@@ -27,35 +27,16 @@ val hideSuggestedContentPatch = bytecodePatch(
         description = "Hides suggested stories/users from story tray."
     )
 
-    val hideSuggestedSearches by booleanOption(
-        key = "hideSuggestedSearches",
-        default = true,
-        title = "Hide suggested searches",
-        description = "Hides suggested users/tag from the search bar."
-    )
-
-    val testKey by booleanOption(
-        key = "testKey",
-        default = true,
-        title = "TESTTTT",
-        description = "Hides suggested users/tag from the search bar."
-    )
-
-    if(testKey == true) {
-        dependsOn(hideThreadsProfileButtonPatch)
-    }
-
-    if (hideSuggestedReels == true) {
-        dependsOn(hideSuggestedReelsPatch)
-    }
-
-    if (hideSuggestedStories == true)
-        dependsOn(hideSuggestedStoriesPatch)
-
-    if (hideSuggestedSearches == true)
-        dependsOn(
-            overrideMobileConfigBooleanFlag(
-                override = "111509::3" to false // ig_search_ta_nullstate_suggestions::is_android_enabled
-            )
+    dependsOn(
+        overrideMobileConfigBooleanFlag(
+            // Hides suggestions in search box
+            override = "111509::3" to false // ig_search_ta_nullstate_suggestions::is_android_enabled
         )
+    )
+
+    execute {
+        if (hideSuggestedReels == true) hideSuggestedReelsPatch()
+
+        if (hideSuggestedStories == true) hideSuggestedStoriesPatch()
+    }
 }

@@ -1,7 +1,7 @@
 package app.morphe.patches.instagram.patches.distractionFree
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patches.instagram.utility.replaceJsonFieldWithBogus
 
 private val FEED_ITEM_KEYS_TO_BE_HIDDEN = arrayOf(
@@ -24,10 +24,7 @@ private object FeedItemParseFromJsonFingerprint : Fingerprint(
     strings = listOf(*FEED_ITEM_KEYS_TO_BE_HIDDEN, "FeedItem")
 )
 
-val hideSuggestedReelsPatch = bytecodePatch {
-    execute {
-        FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-            FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
-        }
-    }
+context(_: BytecodePatchContext)
+fun hideSuggestedReelsPatch() = FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
+    FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
 }

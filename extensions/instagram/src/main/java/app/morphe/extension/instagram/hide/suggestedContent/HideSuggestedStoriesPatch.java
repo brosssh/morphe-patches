@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import app.morphe.extension.shared.Logger;
+
 @SuppressWarnings("unused")
 public class HideSuggestedStoriesPatch {
 
@@ -28,8 +30,13 @@ public class HideSuggestedStoriesPatch {
         while (iterator.hasNext()) {
             Object storyItem = iterator.next();
             Field f = storyItem.getClass().getDeclaredField(reelTypeFieldName);
-            String currentButtonEnumName = (String) f.get(storyItem);
-            if (BLOCKED_STORY_TYPES.contains(currentButtonEnumName)) {
+            Object storyType = f.get(storyItem);
+            if (storyType == null) continue;
+            String currentStoryType = storyType.toString();
+            Logger.printInfo(() -> "Current story type :" + currentStoryType);
+
+            if (BLOCKED_STORY_TYPES.contains(currentStoryType)) {
+                Logger.printInfo(() -> "Removing story type:" + currentStoryType);
                 iterator.remove();
             }
         }

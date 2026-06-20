@@ -46,6 +46,4 @@ val hideSuggestedContentPatch = bytecodePatch(
                 override = "111509::3" to false // ig_search_ta_nullstate_suggestions::is_android_enabled
             )
         )
-
-
 }

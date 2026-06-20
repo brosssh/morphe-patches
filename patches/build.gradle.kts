@@ -17,6 +17,7 @@ dependencies {
     implementation(libs.gson)
 
     implementation(libs.morphe.patches.library)
+    implementation(libs.instagram.morphe.patches.library)
 }
 
 tasks {

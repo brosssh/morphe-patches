@@ -1,6 +1,7 @@
 [versions]
 morphe-patcher = "1.5.1"
 morphe-patches-library = "1.2.0"
+instagram-morphe-patches-library = "1.0.1-dev.2"
 #noinspection GradleDependency
 smali = "b6365a84f4"
 gson = "2.13.2"
@@ -11,6 +12,8 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 morphe-patches-library = { module = "app.morphe:morphe-patches-library", version.ref = "morphe-patches-library" }
 morphe-extensions-library = { module = "app.morphe:morphe-extensions-library", version.ref = "morphe-patches-library" }
+instagram-morphe-patches-library = { module = "app.morphe:instagram-morphe-patches-library", version.ref = "instagram-morphe-patches-library" }
+instagram-morphe-extensions-library = { module = "app.morphe:instagram-morphe-extensions-library", version.ref = "instagram-morphe-patches-library" }
 
 [plugins]
 android-library = { id = "com.android.library" }

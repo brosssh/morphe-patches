@@ -1,3 +1,9 @@
+## [2.7.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.7.0-dev.2...v2.7.0-dev.3) (2026-06-20)
+
+### 🔧 Improvements
+
+* **Instagram:** Use Instagram Morphe patches library ([#176](https://github.com/brosssh/morphe-patches/issues/176)) ([a26d0ba](https://github.com/brosssh/morphe-patches/commit/a26d0baf0c266d7f6b7900e5c73f52394540f2bd))
+
 ## [2.7.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.7.0-dev.1...v2.7.0-dev.2) (2026-06-17)
 
 ### 🐛 Bug Fixes

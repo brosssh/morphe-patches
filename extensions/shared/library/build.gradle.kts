@@ -17,6 +17,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.morphe.extensions.library)
     compileOnly(libs.annotation)
+    implementation(libs.morphe.extensions.library)
+    implementation(libs.instagram.morphe.extensions.library)
 }

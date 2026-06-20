@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-17T14:01:24",
-  "description": "## [2.7.0-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.7.0-dev.1...v2.7.0-dev.2) (2026-06-17)\n\n### 🐛 Bug Fixes\n\n* **Instagram - Hide suggested content:** Hide suggested stories ([#171](https://github.com/brosssh/morphe-patches/issues/171)) ([b94ecb3](https://github.com/brosssh/morphe-patches/commit/b94ecb3a250fc3b23755177f05bb2650cf2578f9))",
-  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.7.0-dev.2/patches-2.7.0-dev.2.mpp",
-  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.7.0-dev.2/patches-2.7.0-dev.2.mpp.asc",
-  "version": "2.7.0-dev.2"
+  "created_at": "2026-06-20T14:57:34",
+  "description": "## [2.7.0-dev.3](https://github.com/brosssh/morphe-patches/compare/v2.7.0-dev.2...v2.7.0-dev.3) (2026-06-20)\n\n### 🔧 Improvements\n\n* **Instagram:** Use Instagram Morphe patches library ([#176](https://github.com/brosssh/morphe-patches/issues/176)) ([a26d0ba](https://github.com/brosssh/morphe-patches/commit/a26d0baf0c266d7f6b7900e5c73f52394540f2bd))",
+  "download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.7.0-dev.3/patches-2.7.0-dev.3.mpp",
+  "signature_download_url": "https://github.com/brosssh/morphe-patches/releases/download/v2.7.0-dev.3/patches-2.7.0-dev.3.mpp.asc",
+  "version": "2.7.0-dev.3"
 }

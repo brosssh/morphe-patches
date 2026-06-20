@@ -4,7 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
-import app.morphe.patches.instagram.patches.misc.overrideMobileConfigBooleanFlag
+import app.morphe.patches.instagram.misc.overrideMobileConfigBooleanFlag
 import app.morphe.util.returnEarly
 
 private object ClipsViewPagerImplGetViewAtIndexFingerprint : Fingerprint(

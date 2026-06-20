@@ -34,8 +34,20 @@ val hideSuggestedContentPatch = bytecodePatch(
         description = "Hides suggested users/tag from the search bar."
     )
 
-    if (hideSuggestedReels == true)
+    val testKey by booleanOption(
+        key = "testKey",
+        default = true,
+        title = "TESTTTT",
+        description = "Hides suggested users/tag from the search bar."
+    )
+
+    if(testKey == true) {
+        dependsOn(hideThreadsProfileButtonPatch)
+    }
+
+    if (hideSuggestedReels == true) {
         dependsOn(hideSuggestedReelsPatch)
+    }
 
     if (hideSuggestedStories == true)
         dependsOn(hideSuggestedStoriesPatch)

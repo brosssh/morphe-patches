@@ -6,10 +6,11 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.string
 import app.morphe.patches.Constants.COMPATIBILITY_INSTAGRAM
 
+// This matches R.id.cf_hub_recycler_view but I don't want to decode resources just for this
 private object NotesTrayViewInitFingerprint : Fingerprint(
     name = "<init>",
     filters = listOf(
-        string("NotesTray")
+        string("NotesTrayAdapter")
     ),
     parameters = listOf("L", "Landroid/view/View;", "L", "L", "L", "L", "L", "L", "L")
 )

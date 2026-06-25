@@ -1,7 +1,7 @@
 [versions]
 morphe-patcher = "1.5.2"
 morphe-patches-library = "1.4.1-dev.5"
-instagram-morphe-patches-library = "1.1.0-dev.3"
+instagram-morphe-patches-library = "1.1.0-dev.4"
 #noinspection GradleDependency
 smali = "d92701d947"
 gson = "2.14.0"

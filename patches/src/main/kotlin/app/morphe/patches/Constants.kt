@@ -13,7 +13,7 @@ object Constants {
                 version = "435.0.0.37.76",
                 versionCodes = mapOf(
                     SupportedAbi.ARM64_V8A to 384109456,
-                    SupportedAbi.ARMEABI_V7A to 383710475 //TODO
+                    SupportedAbi.ARMEABI_V7A to 384109422
                 )
             )
         )

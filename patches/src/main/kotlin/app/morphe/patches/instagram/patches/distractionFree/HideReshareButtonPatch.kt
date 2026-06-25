@@ -14,7 +14,8 @@ private object FeedResponseMediaParserFingerprint : Fingerprint(
     filters = listOf(
         string("enable_media_notes_production")
     ),
-    returnType = "Ljava/lang/Boolean;"
+    returnType = "Ljava/lang/Boolean;",
+    definingClass = "/LiveTreeMediaDict;"
 )
 
 private object LiveTreeGetOptionalBooleanFingerprint : Fingerprint (

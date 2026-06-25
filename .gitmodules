@@ -1,0 +1,3 @@
+[submodule "libs/instagram-morphe-patches-library"]
+	path = libs/instagram-morphe-patches-library
+	url = https://github.com/brosssh/instagram-morphe-patches-library

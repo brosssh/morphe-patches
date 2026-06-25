@@ -37,25 +37,6 @@ plugins {
     id("app.morphe.patches") version "1.3.2-dev.2"
 }
 
-// Include instagram-morphe-patches-library as a composite build if it exists locally
-mapOf(
-    "libs/instagram-morphe-patches-library" to mapOf(
-        "app.morphe:instagram-morphe-patches-library" to ":patch-library",
-        "app.morphe:instagram-morphe-extensions-library" to ":extension-library",
-    ),
-).forEach { (libraryPath, substitutions) ->
-    val libDir = file(libraryPath)
-    if (libDir.exists()) {
-        includeBuild(libDir) {
-            dependencySubstitution {
-                substitutions.forEach { (libraryName, projectPath) ->
-                    substitute(module(libraryName)).using(project(projectPath))
-                }
-            }
-        }
-    }
-}
-
 settings {
     extensions {
         defaultNamespace = "app.morphe.extension"
@@ -65,4 +46,3 @@ settings {
         proguardFiles(rootProject.projectDir.resolve("extensions/proguard-rules.pro").toString())
     }
 }
-

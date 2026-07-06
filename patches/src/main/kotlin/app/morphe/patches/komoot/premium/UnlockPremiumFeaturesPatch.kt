@@ -42,8 +42,6 @@ val unlockProPatch = bytecodePatch(
             )
         }
 
-        routingPermissionInitJsonFingerprint.method.grantRoutingPermission()
-
         routingPermissionInitFingerprint.method.grantRoutingPermission()
     }
 }

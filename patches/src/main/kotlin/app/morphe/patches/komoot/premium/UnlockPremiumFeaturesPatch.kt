@@ -22,7 +22,7 @@ val unlockProPatch = bytecodePatch(
         premiumConfigFingerprint.method.apply {
             addInstruction(
                 0,
-                "sget-object p22, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;"
+                "sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;"
             )
         }
 

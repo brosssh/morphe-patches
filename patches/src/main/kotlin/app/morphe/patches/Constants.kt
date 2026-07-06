@@ -30,7 +30,7 @@ object Constants {
         name = "Komoot",
         packageName = "de.komoot.android",
         appIconColor = 0xECEBB4,
-        targets = listOf(AppTarget(version = "2025.38.2")),
+        targets = listOf(AppTarget(version = "2026.26.7")),
     )
 
     val COMPATIBILITY_MAPY = Compatibility(

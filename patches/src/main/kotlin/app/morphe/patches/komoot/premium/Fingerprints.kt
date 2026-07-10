@@ -37,11 +37,3 @@ internal val routingPermissionInitFingerprint = fingerprint {
         classDef.type == "$routingPermissionClassName;"
     }
 }
-
-internal val routingPermissionInitJsonFingerprint = fingerprint {
-    accessFlags(AccessFlags.PUBLIC, AccessFlags.CONSTRUCTOR)
-    parameters("Lorg/json/JSONObject;")
-    custom { _, classDef ->
-        classDef.type == "$routingPermissionClassName;"
-    }
-}

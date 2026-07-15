@@ -6,14 +6,9 @@ import com.android.tools.smali.dexlib2.AccessFlags
 internal val premiumConfigFingerprint = fingerprint {
     accessFlags(AccessFlags.PUBLIC, AccessFlags.CONSTRUCTOR)
     parameters(
-        "Ljava/lang/Boolean;", "Ljava/lang/Boolean;", "Ljava/lang/Integer;",
-        "Ljava/lang/String;", "Ljava/lang/Boolean;", "Ljava/lang/String;",
-        "Ljava/lang/String;", "Ljava/util/Set;", "Ljava/lang/Boolean;",
-        "Ljava/lang/Boolean;", "Ljava/util/Set;", "Ljava/lang/Boolean;",
-        "Ljava/lang/String;", "Ljava/lang/String;", "Ljava/lang/Boolean;",
-        "Ljava/util/Set;", "Ljava/lang/Boolean;", "Ljava/lang/String;",
-        "Ljava/lang/Boolean;", "Ljava/lang/Integer;", "Ljava/lang/Boolean;",
-        "L", "Ljava/util/List;"
+        "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L",
+        "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L",
+        "L"
     )
     custom { _, classDef ->
         classDef.endsWith("api/model/AppConfigV3;")

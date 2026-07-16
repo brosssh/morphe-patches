@@ -7,7 +7,6 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.Constants
 import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.indexOfFirstInstructionReversed
-import app.morphe.util.returnBoxedBooleanEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -43,11 +42,14 @@ val unlockProPatch = bytecodePatch(
     compatibleWith(Constants.COMPATIBILITY_KOMOOT)
 
     execute {
-        premiumConfigFingerprint.method.returnBoxedBooleanEarly(true)
+        premiumConfigFingerprint.method.addInstruction(
+            0,
+            "sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;"
+        )
 
         publicUserInitFingerprint.method.addInstruction(
-                0,
-                "const/4 p5, 0x1"
+            0,
+            "const/4 p5, 0x1"
         )
 
         routingPermissionInitFingerprint.method.apply {

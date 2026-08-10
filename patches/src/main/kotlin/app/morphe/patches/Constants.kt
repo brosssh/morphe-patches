@@ -46,4 +46,15 @@ object Constants {
         appIconColor = 0xFFFFFF,
         targets = listOf(AppTarget(version = "7.1.11")),
     )
+
+    val COMPATIBILITY_ALLTRAILS = Compatibility(
+        name = "AllTrails",
+        packageName = "com.alltrails.alltrails",
+        appIconColor = 0x64F67A,
+        targets = listOf(
+            AppTarget(version = "26.3.20"),
+            AppTarget(version = "26.6.20"),
+            AppTarget(version = "26.7.40", isExperimental = true),
+        ),
+    )
 }

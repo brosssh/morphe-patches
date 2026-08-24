@@ -10,10 +10,10 @@ object Constants {
         packageName = "com.instagram.android",
         targets = listOf(
             AppTarget(
-                version = "435.0.0.37.76",
+                version = "439.0.0.37.89",
                 versionCodes = mapOf(
-                    SupportedAbi.ARM64_V8A to 384109456,
-                    SupportedAbi.ARMEABI_V7A to 384109422
+                    SupportedAbi.ARM64_V8A to 384510827,
+                    SupportedAbi.ARMEABI_V7A to 384510838
                 )
             )
         )

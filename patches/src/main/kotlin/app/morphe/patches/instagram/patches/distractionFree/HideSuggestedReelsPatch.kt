@@ -26,6 +26,8 @@ private object FeedItemParseFromJsonFingerprint : Fingerprint(
 )
 
 context(_: BytecodePatchContext)
-fun hideSuggestedReelsPatch() = FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-    FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
+fun hideSuggestedReelsPatch() = FeedItemParseFromJsonFingerprint.method.apply {
+    FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
+        replaceJsonFieldWithBogus(key)
+    }
 }

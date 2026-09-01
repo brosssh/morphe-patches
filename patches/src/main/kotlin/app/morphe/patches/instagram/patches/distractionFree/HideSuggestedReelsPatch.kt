@@ -14,17 +14,20 @@ private val FEED_ITEM_KEYS_TO_BE_HIDDEN = arrayOf(
     "suggested_users",
     "suggested_businesses",
     "suggested_hashtags",
-    "suggested_producers",
     "suggested_producers_v2",
+    "suggested_producers",
     "suggested_close_friends",
     "suggested_shops"
 )
 
 private object FeedItemParseFromJsonFingerprint : Fingerprint(
-    strings = listOf(*FEED_ITEM_KEYS_TO_BE_HIDDEN, "FeedItem")
+    strings = listOf(*FEED_ITEM_KEYS_TO_BE_HIDDEN),
+    name = "unsafeParseFromJson"
 )
 
 context(_: BytecodePatchContext)
-fun hideSuggestedReelsPatch() = FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
-    FeedItemParseFromJsonFingerprint.method.replaceJsonFieldWithBogus(key)
+fun hideSuggestedReelsPatch() = FeedItemParseFromJsonFingerprint.method.apply {
+    FEED_ITEM_KEYS_TO_BE_HIDDEN.forEach { key ->
+        replaceJsonFieldWithBogus(key)
+    }
 }

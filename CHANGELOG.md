@@ -1,3 +1,15 @@
+## [2.8.2-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.8.2-dev.1...v2.8.2-dev.2) (2026-08-27)
+
+### 🐛 Bug Fixes
+
+* **Instagram:** Correctly hide suggested stories ([bb78506](https://github.com/brosssh/morphe-patches/commit/bb78506730f7493ee57fb631da8a73c792822562))
+
+## [2.8.2-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.8.1...v2.8.2-dev.1) (2026-08-24)
+
+### 🚀 Updated App Support
+
+* **Instagram:** Update support to `439.0.0.37.89` ([7d07547](https://github.com/brosssh/morphe-patches/commit/7d075475fb3c2caf8a373810f008bd39d9c79ee9))
+
 ## [2.8.1](https://github.com/brosssh/morphe-patches/compare/v2.8.0...v2.8.1) (2026-07-16)
 
 ### 🐛 Bug Fixes

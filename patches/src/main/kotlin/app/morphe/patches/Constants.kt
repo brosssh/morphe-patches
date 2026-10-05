@@ -47,6 +47,9 @@ object Constants {
         name = "park4night",
         packageName = "fr.tramb.park4night",
         appIconColor = 0xFFFFFF,
-        targets = listOf(AppTarget(version = "7.1.11")),
+        targets = listOf(
+            AppTarget(version = "7.1.11"),
+            AppTarget(version = "7.1.62"),
+        ),
     )
 }

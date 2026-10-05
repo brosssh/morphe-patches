@@ -23,7 +23,10 @@ object Constants {
         name = "Chargeprice",
         packageName = "fr.chargeprice.app",
         appIconColor = 0x007AFF,
-        targets = listOf(AppTarget(version = "3.9.2")),
+        targets = listOf(
+            AppTarget(version = "3.9.2"),
+            AppTarget(version = "4.4.0")
+        ),
     )
 
     val COMPATIBILITY_KOMOOT = Compatibility(

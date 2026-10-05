@@ -1,3 +1,9 @@
+## [2.8.3-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.8.2...v2.8.3-dev.1) (2026-10-05)
+
+### 🚀 Updated App Support
+
+* **Chargeprice:** Update support to 4.4.0 ([#217](https://github.com/brosssh/morphe-patches/issues/217)) ([38f89c0](https://github.com/brosssh/morphe-patches/commit/38f89c095a8ab117b6a85a9e25429970fd64323f))
+
 ## [2.8.2](https://github.com/brosssh/morphe-patches/compare/v2.8.1...v2.8.2) (2026-09-01)
 
 ### 🐛 Bug Fixes

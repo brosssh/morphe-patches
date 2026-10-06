@@ -23,7 +23,10 @@ object Constants {
         name = "Chargeprice",
         packageName = "fr.chargeprice.app",
         appIconColor = 0x007AFF,
-        targets = listOf(AppTarget(version = "3.9.2")),
+        targets = listOf(
+            AppTarget(version = "3.9.2"),
+            AppTarget(version = "4.4.0")
+        ),
     )
 
     val COMPATIBILITY_KOMOOT = Compatibility(
@@ -44,6 +47,9 @@ object Constants {
         name = "park4night",
         packageName = "fr.tramb.park4night",
         appIconColor = 0xFFFFFF,
-        targets = listOf(AppTarget(version = "7.1.11")),
+        targets = listOf(
+            AppTarget(version = "7.1.11"),
+            AppTarget(version = "7.1.62"),
+        ),
     )
 }

@@ -1,3 +1,9 @@
+## [2.8.3-dev.2](https://github.com/brosssh/morphe-patches/compare/v2.8.3-dev.1...v2.8.3-dev.2) (2026-10-06)
+
+### 🚀 Updated App Support
+
+* **park4night:** Update support to 7.1.62 ([#219](https://github.com/brosssh/morphe-patches/issues/219)) ([5236355](https://github.com/brosssh/morphe-patches/commit/52363554ec5666a370d4993b13339a819a880554))
+
 ## [2.8.3-dev.1](https://github.com/brosssh/morphe-patches/compare/v2.8.2...v2.8.3-dev.1) (2026-10-05)
 
 ### 🚀 Updated App Support
